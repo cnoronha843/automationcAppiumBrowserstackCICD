@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e65e920b-f35f-4d18-b2df-3f1b29054abc" name="Changes" comment="test cicd" />
+    <list default="true" id="e65e920b-f35f-4d18-b2df-3f1b29054abc" name="Changes" comment="mudando o comando para rodar o test na pipeline">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -115,7 +117,14 @@
       <option name="project" value="LOCAL" />
       <updated>1672783046248</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="mudando o comando para rodar o test na pipeline">
+      <created>1672783246593</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1672783246593</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -133,6 +142,7 @@
     <MESSAGE value="Criacao do projeto e integracao com browserstack de login." />
     <MESSAGE value="Criacao do arquivo .yml" />
     <MESSAGE value="test cicd" />
-    <option name="LAST_COMMIT_MESSAGE" value="test cicd" />
+    <MESSAGE value="mudando o comando para rodar o test na pipeline" />
+    <option name="LAST_COMMIT_MESSAGE" value="mudando o comando para rodar o test na pipeline" />
   </component>
 </project>
