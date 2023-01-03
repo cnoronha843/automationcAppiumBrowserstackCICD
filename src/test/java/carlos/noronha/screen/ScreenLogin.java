@@ -49,7 +49,7 @@ public class ScreenLogin {
     public void loginIos(){
         botaoMaisOpcoes.click();
         campoEmail.sendKeys("catns.ios.noteit@gmail.com");
-        campoSenha.sendKeys("Mudar123");
+        campoSenha.sendKeys("Mudar12");
         botaoEntrar.click();
     }
     public void loginAndroid() throws MalformedURLException, InterruptedException {
