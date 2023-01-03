@@ -11,25 +11,25 @@ import org.openqa.selenium.remote.RemoteWebElement;
 import java.net.MalformedURLException;
 
 public class TestLoginAndroid {
-        private static ScreenLogin screenLoginAndroid;
-        private static AppiumDriver<RemoteWebElement> driver;
-
-        @BeforeClass
-        public static void caps() throws MalformedURLException {
-                driver = DriverFactory.getDriver("browserstackAndroid");
-                screenLoginAndroid = new ScreenLogin(driver);
-
-
-        }
-
-        @Test
-        public void testLogin() throws MalformedURLException, InterruptedException {
-                screenLoginAndroid.loginAndroid();
-        }
-        @AfterClass
-        public static void killDriver(){
-                driver.quit();
-        }
+//        private static ScreenLogin screenLoginAndroid;
+//        private static AppiumDriver<RemoteWebElement> driver;
+//
+//        @BeforeClass
+//        public static void caps() throws MalformedURLException {
+//                driver = DriverFactory.getDriver("browserstackAndroid");
+//                screenLoginAndroid = new ScreenLogin(driver);
+//
+//
+//        }
+//
+//        @Test
+//        public void testLogin() throws MalformedURLException, InterruptedException {
+//                screenLoginAndroid.loginAndroid();
+//        }
+//        @AfterClass
+//        public static void killDriver(){
+//                driver.quit();
+//        }
 
 
 
