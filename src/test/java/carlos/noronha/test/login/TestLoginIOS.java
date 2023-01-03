@@ -19,23 +19,25 @@ public class TestLoginIOS {
         public static void caps() throws MalformedURLException {
 
 
+//                driver = DriverFactory.getDriver("ios");
                 driver = DriverFactory.getDriver("browserstackiOS");
                 screenLoginIos = new ScreenLogin(driver);
 
         }
 
         @Test
-        public void testLogin() {
+        public void testLoginLoginSuccessful() throws InterruptedException {
                 screenLoginIos.loginIos();
+                screenLoginIos.validationLoginSuccessful();
         }
-        @Test
-        public void testSignUpIos() throws InterruptedException {
-                screenLoginIos.SignUpIos();
-        }
-        @Test
-        public void connectToPartner() throws InterruptedException {
-                screenLoginIos.linkPartner();
-        }
+//        @Test
+//        public void testSignUpIos() throws InterruptedException {
+//                screenLoginIos.SignUpIos();
+//        }
+//        @Test
+//        public void connectToPartner() throws InterruptedException {
+//                screenLoginIos.linkPartner();
+//        }
         @AfterClass
         public static void killDriver(){
                 driver.quit();

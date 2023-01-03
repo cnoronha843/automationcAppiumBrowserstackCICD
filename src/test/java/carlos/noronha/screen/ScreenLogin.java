@@ -1,15 +1,17 @@
 package carlos.noronha.screen;
 
+import carlos.noronha.core.ScreenBase;
 import io.appium.java_client.AppiumDriver;
 import io.appium.java_client.pagefactory.AndroidFindBy;
 import io.appium.java_client.pagefactory.AppiumFieldDecorator;
 import io.appium.java_client.pagefactory.iOSFindBy;
+import org.junit.Assert;
 import org.openqa.selenium.remote.RemoteWebElement;
 import org.openqa.selenium.support.PageFactory;
 
 import java.net.MalformedURLException;
 
-public class ScreenLogin {
+public class ScreenLogin extends ScreenBase {
     public ScreenLogin(AppiumDriver<RemoteWebElement> driver){
         PageFactory.initElements(new AppiumFieldDecorator(driver), this);
     }
@@ -29,15 +31,16 @@ public class ScreenLogin {
     @AndroidFindBy(xpath="/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.widget.FrameLayout/android.widget.LinearLayout/android.view.ViewGroup[1]/android.view.ViewGroup/android.widget.TextView")
     @iOSFindBy(accessibility="Sign in")
     private RemoteWebElement botaoEntrar;
-    @AndroidFindBy(id="fsfsd")
     @iOSFindBy(accessibility="Sign up")
     private RemoteWebElement botaoSignUp;
-    @AndroidFindBy(id="sadasd")
     @iOSFindBy(accessibility="not-checked-square")
     private RemoteWebElement botaoTerms;
     @AndroidFindBy(id="dadasdasd")
     @iOSFindBy(xpath="//XCUIElementTypeApplication[@name=\"noteit\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeTextField")
     private RemoteWebElement campoParceiro;
+    @AndroidFindBy(id="dadasdasd")
+    @iOSFindBy(xpath="//XCUIElementTypeStaticText[@name=\"inbox\"]")
+    private RemoteWebElement loginValidation;
 
 
 
@@ -72,6 +75,13 @@ public class ScreenLogin {
         Thread.sleep(1000);
         botaoSignUp.click();
         Thread.sleep(1000);
+    }
+    public void validationLoginSuccessful() throws InterruptedException {
+        waitFiveSeconds();
+        System.out.println(loginValidation.getText());
+        Assert.assertEquals("inbox" , loginValidation.getText());
+
+
     }
 
 
