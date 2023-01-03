@@ -4,19 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e65e920b-f35f-4d18-b2df-3f1b29054abc" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/carlos/noronha/core/DriverFactory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/carlos/noronha/core/ScreenBase.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/carlos/noronha/core/SpannerDB.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/carlos/noronha/screen/ScreenLogin.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/carlos/noronha/test/login/TestLoginAndroid.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/carlos/noronha/test/login/TestLoginIOS.java" afterDir="false" />
+    <list default="true" id="e65e920b-f35f-4d18-b2df-3f1b29054abc" name="Changes" comment="Criacao do projeto e integracao com browserstack de login.">
+      <change afterPath="$PROJECT_DIR$/.github/workflows/regressive.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -102,6 +93,14 @@
       <option name="presentableId" value="Default" />
       <updated>1672760637246</updated>
     </task>
+    <task id="LOCAL-00001" summary="Criacao do projeto e integracao com browserstack de login.">
+      <created>1672766720753</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1672766720753</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -114,5 +113,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Criacao do projeto e integracao com browserstack de login." />
+    <option name="LAST_COMMIT_MESSAGE" value="Criacao do projeto e integracao com browserstack de login." />
   </component>
 </project>
