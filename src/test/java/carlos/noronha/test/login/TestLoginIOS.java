@@ -62,7 +62,7 @@ public class TestLoginIOS {
 public void fecharApp()  {        driver.resetApp ();
 
 }@AfterClass
-public void killApp()  {        driver.quit ();
+public static void killApp()  {        driver.quit ();
 
 }
 
