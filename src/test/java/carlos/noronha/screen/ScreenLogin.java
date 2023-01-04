@@ -104,8 +104,10 @@ public class ScreenLogin extends ScreenBase {
     public void validationLoginPasswordIncorrect() throws InterruptedException {
         waitFiveSeconds();
         System.out.println(loginValidation.getText());
-        Assert.assertEquals("Password is incorrect...or this user doesn’t exist yet." , passwordIncorrect.getText());
         ok.click();
+        waitOneSecond();
+        Assert.assertEquals("Password is incorrect...or this user doesn’t exist yet." , passwordIncorrect.getText());
+
 
     }
 }

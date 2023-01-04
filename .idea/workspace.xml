@@ -4,14 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e65e920b-f35f-4d18-b2df-3f1b29054abc" name="Changes" comment="Alteracao do beforeclass e do afterclass">
-      <change afterPath="$PROJECT_DIR$/src/test/java/carlos/noronha/screen/ScreenDrawing.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/carlos/noronha/screen/ScreenMenuSettings.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/carlos/noronha/screen/ScreenSettings.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/carlos/noronha/screen/ScreenInBox.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/carlos/noronha/screen/ScreenInBox.java" afterDir="false" />
+    <list default="true" id="e65e920b-f35f-4d18-b2df-3f1b29054abc" name="Changes" comment="inserindo sign out no teste de login com a senha correta">
       <change beforePath="$PROJECT_DIR$/src/test/java/carlos/noronha/screen/ScreenLogin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/carlos/noronha/screen/ScreenLogin.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/carlos/noronha/test/login/TestLoginIOS.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/carlos/noronha/test/login/TestLoginIOS.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -197,7 +191,14 @@
       <option name="project" value="LOCAL" />
       <updated>1672802021952</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="inserindo sign out no teste de login com a senha correta">
+      <created>1672804150650</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1672804150650</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -222,6 +223,7 @@
     <MESSAGE value="Criacao de teste de login com a senha certa e com a senha errada" />
     <MESSAGE value="Alteracao do pom" />
     <MESSAGE value="Alteracao do beforeclass e do afterclass" />
-    <option name="LAST_COMMIT_MESSAGE" value="Alteracao do beforeclass e do afterclass" />
+    <MESSAGE value="inserindo sign out no teste de login com a senha correta" />
+    <option name="LAST_COMMIT_MESSAGE" value="inserindo sign out no teste de login com a senha correta" />
   </component>
 </project>
