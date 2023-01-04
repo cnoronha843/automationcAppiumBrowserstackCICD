@@ -59,6 +59,7 @@ public class ScreenLogin extends ScreenBase {
         botaoMaisOpcoes.click();
         campoEmail.sendKeys("catns.ios.noteit@gmail.com");
         campoSenha.sendKeys("Mudar123");
+        waitOneSecond();
         botaoEntrar.click();
     }public void loginIncorrectIOS(){
         botaoMaisOpcoes.click();
