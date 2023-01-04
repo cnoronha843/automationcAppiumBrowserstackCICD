@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e65e920b-f35f-4d18-b2df-3f1b29054abc" name="Changes" comment="Alteracao do pom">
+    <list default="true" id="e65e920b-f35f-4d18-b2df-3f1b29054abc" name="Changes" comment="Alteracao do beforeclass e do afterclass">
       <change beforePath="$PROJECT_DIR$/src/test/java/carlos/noronha/test/login/TestLoginIOS.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/carlos/noronha/test/login/TestLoginIOS.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -159,7 +159,14 @@
       <option name="project" value="LOCAL" />
       <updated>1672801472438</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Alteracao do beforeclass e do afterclass">
+      <created>1672801739880</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1672801739880</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -183,6 +190,7 @@
     <MESSAGE value="removendo test android" />
     <MESSAGE value="Criacao de teste de login com a senha certa e com a senha errada" />
     <MESSAGE value="Alteracao do pom" />
-    <option name="LAST_COMMIT_MESSAGE" value="Alteracao do pom" />
+    <MESSAGE value="Alteracao do beforeclass e do afterclass" />
+    <option name="LAST_COMMIT_MESSAGE" value="Alteracao do beforeclass e do afterclass" />
   </component>
 </project>
