@@ -57,11 +57,10 @@ public class TestLoginIOS {
 //        public void connectToPartner() throws InterruptedException {
 //                screenLoginIos.linkPartner();
 //        }
-        @After
-        public  void killDriver(){
+@After
+public void fecharApp()  {        driver.resetApp ();
 
-                driver.quit();
-        }
+}
 
 
 }
