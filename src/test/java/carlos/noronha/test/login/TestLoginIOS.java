@@ -13,7 +13,7 @@ public class TestLoginIOS {
         private static AppiumDriver<RemoteWebElement> driver;
 
         @Before
-        public static void caps() throws MalformedURLException {
+        public  void caps() throws MalformedURLException {
 
 
 //                driver = DriverFactory.getDriver("ios");
@@ -41,7 +41,7 @@ public class TestLoginIOS {
 //                screenLoginIos.linkPartner();
 //        }
         @After
-        public static void killDriver(){
+        public void killDriver(){
 
                 driver.quit();
         }

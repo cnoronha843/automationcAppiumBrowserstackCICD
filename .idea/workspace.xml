@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e65e920b-f35f-4d18-b2df-3f1b29054abc" name="Changes" comment="Criacao de teste de login com a senha certa e com a senha errada" />
+    <list default="true" id="e65e920b-f35f-4d18-b2df-3f1b29054abc" name="Changes" comment="Alteracao do pom">
+      <change beforePath="$PROJECT_DIR$/src/test/java/carlos/noronha/test/login/TestLoginIOS.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/carlos/noronha/test/login/TestLoginIOS.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -150,7 +152,14 @@
       <option name="project" value="LOCAL" />
       <updated>1672801299436</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Alteracao do pom">
+      <created>1672801472438</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1672801472438</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -173,6 +182,7 @@
     <MESSAGE value="Implementando validacao no login" />
     <MESSAGE value="removendo test android" />
     <MESSAGE value="Criacao de teste de login com a senha certa e com a senha errada" />
-    <option name="LAST_COMMIT_MESSAGE" value="Criacao de teste de login com a senha certa e com a senha errada" />
+    <MESSAGE value="Alteracao do pom" />
+    <option name="LAST_COMMIT_MESSAGE" value="Alteracao do pom" />
   </component>
 </project>
