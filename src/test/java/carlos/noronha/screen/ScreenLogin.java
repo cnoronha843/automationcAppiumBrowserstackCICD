@@ -19,6 +19,8 @@ public class ScreenLogin extends ScreenBase {
     @AndroidFindBy(id="et_email")
     @iOSFindBy(xpath="//XCUIElementTypeApplication[@name=\"noteit\"]/XCUIElementTypeWindow/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeTextField")
     private RemoteWebElement campoEmail;
+    @iOSFindBy(accessibility="Password is incorrect...or this user doesn’t exist yet.")
+    private RemoteWebElement passwordIncorrect;
     @AndroidFindBy(id="com.android.permissioncontroller:id/permission_allow_button")
     @iOSFindBy(xpath="//XCUIElementTypeApplication[@name=\"noteit\"]/XCUIElementTypeWindow/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeTextField")
     private RemoteWebElement contactAccess;
@@ -49,10 +51,15 @@ public class ScreenLogin extends ScreenBase {
         campoParceiro.sendKeys("4905943");
         Thread.sleep(2000);
     }
-    public void loginIos(){
+    public void loginCorrectIOS(){
         botaoMaisOpcoes.click();
         campoEmail.sendKeys("catns.ios.noteit@gmail.com");
         campoSenha.sendKeys("Mudar123");
+        botaoEntrar.click();
+    }public void loginIncorrectIOS(){
+        botaoMaisOpcoes.click();
+        campoEmail.sendKeys("catns.ios.noteit@gmail.com");
+        campoSenha.sendKeys("Mudar");
         botaoEntrar.click();
     }
     public void loginAndroid() throws MalformedURLException, InterruptedException {
@@ -76,7 +83,7 @@ public class ScreenLogin extends ScreenBase {
         botaoSignUp.click();
         Thread.sleep(1000);
     }
-    public void validationLoginSuccessful() throws InterruptedException {
+    public void validationLoginPasswordCorrect() throws InterruptedException {
         waitFiveSeconds();
         System.out.println(loginValidation.getText());
         Assert.assertEquals("inbox" , loginValidation.getText());
@@ -85,4 +92,9 @@ public class ScreenLogin extends ScreenBase {
     }
 
 
+    public void validationLoginPasswordIncorrect() throws InterruptedException {
+        waitFiveSeconds();
+        System.out.println(loginValidation.getText());
+        Assert.assertEquals("Password is incorrect...or this user doesn’t exist yet." , passwordIncorrect.getText());
+    }
 }

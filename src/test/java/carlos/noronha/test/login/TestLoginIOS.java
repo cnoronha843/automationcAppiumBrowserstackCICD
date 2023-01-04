@@ -3,19 +3,16 @@ package carlos.noronha.test.login;
 import carlos.noronha.core.DriverFactory;
 import carlos.noronha.screen.ScreenLogin;
 import io.appium.java_client.AppiumDriver;
-import org.junit.AfterClass;
-import org.junit.BeforeClass;
-import org.junit.Test;
+import org.junit.*;
 import org.openqa.selenium.remote.RemoteWebElement;
 
 import java.net.MalformedURLException;
-import java.net.URL;
 
 public class TestLoginIOS {
         private static ScreenLogin screenLoginIos;
         private static AppiumDriver<RemoteWebElement> driver;
 
-        @BeforeClass
+        @Before
         public static void caps() throws MalformedURLException {
 
 
@@ -26,9 +23,14 @@ public class TestLoginIOS {
         }
 
         @Test
-        public void testLoginLoginSuccessful() throws InterruptedException {
-                screenLoginIos.loginIos();
-                screenLoginIos.validationLoginSuccessful();
+        public void testLoginLoginPasswordCorrect() throws InterruptedException {
+                screenLoginIos.loginCorrectIOS();
+                screenLoginIos.validationLoginPasswordCorrect();
+        }
+        @Test
+        public void testLoginLoginPasswordIncorrect() throws InterruptedException {
+                screenLoginIos.loginIncorrectIOS();
+                screenLoginIos.validationLoginPasswordIncorrect();
         }
 //        @Test
 //        public void testSignUpIos() throws InterruptedException {
@@ -38,8 +40,9 @@ public class TestLoginIOS {
 //        public void connectToPartner() throws InterruptedException {
 //                screenLoginIos.linkPartner();
 //        }
-        @AfterClass
+        @After
         public static void killDriver(){
+
                 driver.quit();
         }
 
