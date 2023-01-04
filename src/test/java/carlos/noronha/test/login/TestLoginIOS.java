@@ -18,8 +18,8 @@ public class TestLoginIOS {
         private static ScreenInBox screenInBox;
         private static AppiumDriver<RemoteWebElement> driver;
 
-        @BeforeClass
-        public static void caps() throws MalformedURLException {
+        @Before
+        public  void caps() throws MalformedURLException {
 
 
 //                driver = DriverFactory.getDriver("ios");
