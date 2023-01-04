@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e65e920b-f35f-4d18-b2df-3f1b29054abc" name="Changes" comment="inserindo sign out no teste de login com a senha correta">
-      <change beforePath="$PROJECT_DIR$/src/test/java/carlos/noronha/screen/ScreenLogin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/carlos/noronha/screen/ScreenLogin.java" afterDir="false" />
-    </list>
+    <list default="true" id="e65e920b-f35f-4d18-b2df-3f1b29054abc" name="Changes" comment="alteracao do teste de senha invalida" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -198,7 +196,21 @@
       <option name="project" value="LOCAL" />
       <updated>1672804150650</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="alteracao do teste de senha invalida">
+      <created>1672804376556</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1672804376556</updated>
+    </task>
+    <task id="LOCAL-00014" summary="alteracao do teste de senha invalida">
+      <created>1672804516777</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1672804516777</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -224,6 +236,7 @@
     <MESSAGE value="Alteracao do pom" />
     <MESSAGE value="Alteracao do beforeclass e do afterclass" />
     <MESSAGE value="inserindo sign out no teste de login com a senha correta" />
-    <option name="LAST_COMMIT_MESSAGE" value="inserindo sign out no teste de login com a senha correta" />
+    <MESSAGE value="alteracao do teste de senha invalida" />
+    <option name="LAST_COMMIT_MESSAGE" value="alteracao do teste de senha invalida" />
   </component>
 </project>

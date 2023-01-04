@@ -46,6 +46,7 @@ public class TestLoginIOS {
         public void testLoginLoginPasswordIncorrect() throws InterruptedException, MalformedURLException {
                 screenLoginIos.loginIncorrectIOS();
                 screenLoginIos.validationLoginPasswordIncorrect();
+                screenLoginIos.okClick();
         }
 //        @Test
 //        public void testSignUpIos() throws InterruptedException {
