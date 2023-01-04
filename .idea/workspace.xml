@@ -5,6 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e65e920b-f35f-4d18-b2df-3f1b29054abc" name="Changes" comment="Alteracao do beforeclass e do afterclass">
+      <change afterPath="$PROJECT_DIR$/src/test/java/carlos/noronha/screen/ScreenDrawing.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/carlos/noronha/screen/ScreenMenuSettings.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/carlos/noronha/screen/ScreenSettings.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/carlos/noronha/screen/ScreenInBox.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/carlos/noronha/screen/ScreenInBox.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/carlos/noronha/screen/ScreenLogin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/carlos/noronha/screen/ScreenLogin.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/carlos/noronha/test/login/TestLoginIOS.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/carlos/noronha/test/login/TestLoginIOS.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -35,11 +41,12 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "com.google.cloudcode.ide_session_index": "20230103_0002",
-    "last_opened_file_path": "/Users/premiersoft/Downloads/noteIt/appiumGithubActionBrowserstack/AutomationAppiumBrowserstack/src/test/java/carlos/noronha/test"
+    "last_opened_file_path": "/Users/premiersoft/Downloads/noteIt/appiumGithubActionBrowserstack/AutomationAppiumBrowserstack/src/test/java/carlos/noronha/screen"
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/test/java/carlos/noronha/screen" />
       <recent name="$PROJECT_DIR$/src/test/java/carlos/noronha/test" />
       <recent name="$PROJECT_DIR$/src/test/java/carlos/noronha" />
     </key>
@@ -47,7 +54,7 @@
       <recent name="carlos.noronha.screen" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.TestLoginIOS.testLogin">
+  <component name="RunManager" selected="JUnit.TestLoginIOS.testLoginLoginPasswordCorrect">
     <configuration name="TestLoginAndroid.testLogin" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="AutomationAppiumBrowserstack" />
       <extension name="coverage">
@@ -80,8 +87,25 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="TestLoginIOS.testLoginLoginPasswordCorrect" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="AutomationAppiumBrowserstack" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="carlos.noronha.test.login.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="carlos.noronha.test.login" />
+      <option name="MAIN_CLASS_NAME" value="carlos.noronha.test.login.TestLoginIOS" />
+      <option name="METHOD_NAME" value="testLoginLoginPasswordCorrect" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.TestLoginIOS.testLoginLoginPasswordCorrect" />
         <item itemvalue="JUnit.TestLoginIOS.testLogin" />
         <item itemvalue="JUnit.TestLoginAndroid.testLogin" />
       </list>
@@ -166,7 +190,14 @@
       <option name="project" value="LOCAL" />
       <updated>1672801739880</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Alteracao do beforeclass e do afterclass">
+      <created>1672802021952</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1672802021952</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">

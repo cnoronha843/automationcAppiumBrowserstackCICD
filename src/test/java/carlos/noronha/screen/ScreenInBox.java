@@ -30,11 +30,11 @@ public class ScreenInBox extends ScreenBase {
     @iOSFindBy(accessibility="app-logo")
     private static RemoteWebElement inBox;
     @AndroidFindBy(xpath="/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.LinearLayout[3]/android.view.ViewGroup/android.widget.TextView")
-    @iOSFindBy(accessibility="\uD83D\uDD27 settings")
+    @iOSFindBy(xpath="//XCUIElementTypeStaticText[@name=\"settings\"]")
     private RemoteWebElement settings;
 //    @AndroidFindBy(id="image_profile")
     @AndroidFindBy(id="btn_settings")
-    @iOSFindBy(accessibility="menu-icon")
+    @iOSFindBy(accessibility="app-logo")
     private RemoteWebElement menuInbox;
     @AndroidFindBy(id="txt_streak_countdown")
     @iOSFindBy(accessibility="menu-icon")
@@ -58,12 +58,13 @@ public class ScreenInBox extends ScreenBase {
 
 
     public void goToSetting() throws MalformedURLException, InterruptedException {
-        menuInbox.click();
+
+        longPressByElement(settings,500);
         waitOneSecond();
-        settings.click();
     }
     public void menuInbox() throws MalformedURLException, InterruptedException {
         menuInbox.click();
+        waitOneSecond();
 
     }
     public void goToInbox() throws MalformedURLException, InterruptedException {

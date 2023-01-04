@@ -43,6 +43,8 @@ public class ScreenLogin extends ScreenBase {
     @AndroidFindBy(id="dadasdasd")
     @iOSFindBy(xpath="//XCUIElementTypeStaticText[@name=\"inbox\"]")
     private RemoteWebElement loginValidation;
+    @iOSFindBy(accessibility="ok")
+    private RemoteWebElement ok;
 
 
 
@@ -89,6 +91,13 @@ public class ScreenLogin extends ScreenBase {
         Assert.assertEquals("inbox" , loginValidation.getText());
 
 
+
+    }
+    public void inboxClick() throws InterruptedException {
+       loginValidation.click();
+
+
+
     }
 
 
@@ -96,5 +105,7 @@ public class ScreenLogin extends ScreenBase {
         waitFiveSeconds();
         System.out.println(loginValidation.getText());
         Assert.assertEquals("Password is incorrect...or this user doesn’t exist yet." , passwordIncorrect.getText());
+        ok.click();
+
     }
 }
