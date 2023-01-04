@@ -43,7 +43,7 @@ public class TestLoginIOS {
 
         }
         @Test
-        public void testLoginLoginPasswordIncorrect() throws InterruptedException {
+        public void testLoginLoginPasswordIncorrect() throws InterruptedException, MalformedURLException {
                 screenLoginIos.loginIncorrectIOS();
                 screenLoginIos.validationLoginPasswordIncorrect();
         }
