@@ -31,7 +31,7 @@ public class ScreenLogin extends ScreenBase {
     @iOSFindBy(accessibility="more options")
     private RemoteWebElement botaoMaisOpcoes;
     @AndroidFindBy(xpath="/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.widget.FrameLayout/android.widget.LinearLayout/android.view.ViewGroup[1]/android.view.ViewGroup/android.widget.TextView")
-    @iOSFindBy(accessibility="Sign in")
+    @iOSFindBy(xpath="//XCUIElementTypeButton[3]")
     private RemoteWebElement botaoEntrar;
     @iOSFindBy(accessibility="Sign up")
     private RemoteWebElement botaoSignUp;
@@ -57,9 +57,12 @@ public class ScreenLogin extends ScreenBase {
         waitOneSecond();
         waitOneSecond();
         botaoMaisOpcoes.click();
-        campoEmail.sendKeys("catns.ios.noteit@gmail.com");
-        campoSenha.sendKeys("Mudar123");
+        campoEmail.sendKeys("catns.and.noteit@gmail.com");
+        System.out.println("Escreve o e-mail");
+        campoSenha.sendKeys("teste123");
+        System.out.println("Escreve a senha");
         waitOneSecond();
+
         botaoEntrar.click();
     }public void loginIncorrectIOS(){
         botaoMaisOpcoes.click();

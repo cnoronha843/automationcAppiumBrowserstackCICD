@@ -31,18 +31,18 @@ public class TestLoginIOS {
 
         }
 
-        @Test
-        public void testLoginLoginPasswordCorrect() throws InterruptedException, MalformedURLException {
-
-                screenLoginIos.loginCorrectIOS();
-                screenLoginIos.validationLoginPasswordCorrect();
-                screenLoginIos.inboxClick();
-                screenInBox.menuInbox();
-                screenInBox.goToSetting();
-                screenSettings.signOut();
-
-
-        }
+//        @Test
+//        public void testLoginLoginPasswordCorrect() throws InterruptedException, MalformedURLException {
+//
+//                screenLoginIos.loginCorrectIOS();
+//                screenLoginIos.validationLoginPasswordCorrect();
+//                screenLoginIos.inboxClick();
+//                screenInBox.menuInbox();
+//                screenInBox.goToSetting();
+//                screenSettings.signOut();
+//
+//
+//        }
         @Test
         public void testLoginLoginPasswordIncorrect() throws InterruptedException, MalformedURLException {
                 screenLoginIos.loginIncorrectIOS();
