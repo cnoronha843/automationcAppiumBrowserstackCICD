@@ -47,6 +47,7 @@ public class TestLoginIOS {
                 screenLoginIos.loginIncorrectIOS();
                 screenLoginIos.validationLoginPasswordIncorrect();
                 screenLoginIos.okClick();
+                screenLoginIos.cleanField();
         }
 //        @Test
 //        public void testSignUpIos() throws InterruptedException {
@@ -56,8 +57,8 @@ public class TestLoginIOS {
 //        public void connectToPartner() throws InterruptedException {
 //                screenLoginIos.linkPartner();
 //        }
-        @AfterClass
-        public static void killDriver(){
+        @After
+        public  void killDriver(){
 
                 driver.quit();
         }

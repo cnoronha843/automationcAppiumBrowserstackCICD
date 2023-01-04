@@ -106,8 +106,13 @@ public class ScreenLogin extends ScreenBase {
         waitOneSecond();
         Assert.assertEquals("Password is incorrect...or this user doesn’t exist yet." , passwordIncorrect.getText());
     }
-    public void okClick() throws MalformedURLException {
+    public void okClick() throws MalformedURLException, InterruptedException {
         longPressByElement(ok,1000);
+        waitOneSecond();
 
+    }
+    public void cleanField() throws MalformedURLException {
+        campoEmail.clear();
+        campoSenha.clear();
     }
 }
