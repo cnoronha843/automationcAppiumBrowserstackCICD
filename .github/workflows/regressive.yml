@@ -17,4 +17,4 @@ jobs:
           distribution: 'adopt'
           cache: maven
       - name: Run test
-        run: mvn TestLoginIOS.testLogin
+        run: mvn test
