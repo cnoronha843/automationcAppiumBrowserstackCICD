@@ -33,6 +33,7 @@ public class TestLoginIOS {
 
         @Test
         public void testLoginLoginPasswordCorrect() throws InterruptedException, MalformedURLException {
+
                 screenLoginIos.loginCorrectIOS();
                 screenLoginIos.validationLoginPasswordCorrect();
                 screenLoginIos.inboxClick();
@@ -46,8 +47,8 @@ public class TestLoginIOS {
         public void testLoginLoginPasswordIncorrect() throws InterruptedException, MalformedURLException {
                 screenLoginIos.loginIncorrectIOS();
                 screenLoginIos.validationLoginPasswordIncorrect();
-                screenLoginIos.okClick();
-                screenLoginIos.cleanField();
+//                screenLoginIos.okClick();
+//                screenLoginIos.cleanField();
         }
 //        @Test
 //        public void testSignUpIos() throws InterruptedException {
@@ -59,6 +60,9 @@ public class TestLoginIOS {
 //        }
 @After
 public void fecharApp()  {        driver.resetApp ();
+
+}@AfterClass
+public void killApp()  {        driver.quit ();
 
 }
 

@@ -53,7 +53,9 @@ public class ScreenLogin extends ScreenBase {
         campoParceiro.sendKeys("4905943");
         Thread.sleep(2000);
     }
-    public void loginCorrectIOS(){
+    public void loginCorrectIOS() throws InterruptedException {
+        waitOneSecond();
+        waitOneSecond();
         botaoMaisOpcoes.click();
         campoEmail.sendKeys("catns.ios.noteit@gmail.com");
         campoSenha.sendKeys("Mudar123");
