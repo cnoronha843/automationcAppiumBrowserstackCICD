@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e65e920b-f35f-4d18-b2df-3f1b29054abc" name="Changes" comment="alteracao do teste de senha invalida">
+    <list default="true" id="e65e920b-f35f-4d18-b2df-3f1b29054abc" name="Changes" comment="teste cicd">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/carlos/noronha/screen/ScreenLogin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/carlos/noronha/screen/ScreenLogin.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/carlos/noronha/test/login/TestLoginIOS.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/carlos/noronha/test/login/TestLoginIOS.java" afterDir="false" />
@@ -36,7 +36,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "com.google.cloudcode.ide_session_index": "20230104_0001",
+    "com.google.cloudcode.ide_session_index": "20230105_0001",
     "last_opened_file_path": "/Users/premiersoft/Downloads/noteIt/appiumGithubActionBrowserstack/AutomationAppiumBrowserstack/src/test/java/carlos/noronha/screen"
   }
 }]]></component>
@@ -50,7 +50,7 @@
       <recent name="carlos.noronha.screen" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.TestLoginIOS.testLoginLoginPasswordCorrect">
+  <component name="RunManager" selected="JUnit.TestLoginIOS">
     <configuration name="TestLoginAndroid.testLogin" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="AutomationAppiumBrowserstack" />
       <extension name="coverage">
@@ -114,10 +114,27 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="TestLoginIOS.testLoginPasswordCorrect" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="AutomationAppiumBrowserstack" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="carlos.noronha.test.login.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="carlos.noronha.test.login" />
+      <option name="MAIN_CLASS_NAME" value="carlos.noronha.test.login.TestLoginIOS" />
+      <option name="METHOD_NAME" value="testLoginPasswordCorrect" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.TestLoginIOS.testLoginLoginPasswordCorrect" />
         <item itemvalue="JUnit.TestLoginIOS" />
+        <item itemvalue="JUnit.TestLoginIOS.testLoginPasswordCorrect" />
+        <item itemvalue="JUnit.TestLoginIOS.testLoginLoginPasswordCorrect" />
         <item itemvalue="JUnit.TestLoginIOS.testLogin" />
         <item itemvalue="JUnit.TestLoginAndroid.testLogin" />
       </list>
@@ -279,7 +296,14 @@
       <option name="project" value="LOCAL" />
       <updated>1672806415393</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="teste cicd">
+      <created>1672854668742</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1672854668742</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -306,6 +330,7 @@
     <MESSAGE value="Alteracao do beforeclass e do afterclass" />
     <MESSAGE value="inserindo sign out no teste de login com a senha correta" />
     <MESSAGE value="alteracao do teste de senha invalida" />
-    <option name="LAST_COMMIT_MESSAGE" value="alteracao do teste de senha invalida" />
+    <MESSAGE value="teste cicd" />
+    <option name="LAST_COMMIT_MESSAGE" value="teste cicd" />
   </component>
 </project>

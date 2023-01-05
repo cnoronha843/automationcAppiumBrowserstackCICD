@@ -55,18 +55,19 @@ public class ScreenLogin extends ScreenBase {
     }
     public void loginCorrectIOS() throws InterruptedException {
         waitOneSecond();
-        waitOneSecond();
         botaoMaisOpcoes.click();
-        campoEmail.sendKeys("catns.and.noteit@gmail.com");
+        campoEmail.sendKeys("carlos.automation.ios.noteit@gmail.com");
+        waitOneSecond();
         System.out.println("Escreve o e-mail");
-        campoSenha.sendKeys("teste123");
+        campoSenha.sendKeys("Mudar123");
         System.out.println("Escreve a senha");
         waitOneSecond();
 
         botaoEntrar.click();
-    }public void loginIncorrectIOS(){
+    }
+    public void loginIncorrectIOS(){
         botaoMaisOpcoes.click();
-        campoEmail.sendKeys("catns.ios.noteit@gmail.com");
+        campoEmail.sendKeys("carlos.automation.ios.noteit@gmail.com");
         campoSenha.sendKeys("Mudar");
         botaoEntrar.click();
     }
@@ -105,6 +106,10 @@ public class ScreenLogin extends ScreenBase {
 
 
     }
+
+
+
+
 
 
     public void validationLoginPasswordIncorrect() throws InterruptedException, MalformedURLException {

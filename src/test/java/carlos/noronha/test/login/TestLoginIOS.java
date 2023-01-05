@@ -31,37 +31,22 @@ public class TestLoginIOS {
 
         }
 
-//        @Test
-//        public void testLoginLoginPasswordCorrect() throws InterruptedException, MalformedURLException {
-//
-//                screenLoginIos.loginCorrectIOS();
-//                screenLoginIos.validationLoginPasswordCorrect();
-//                screenLoginIos.inboxClick();
-//                screenInBox.menuInbox();
-//                screenInBox.goToSetting();
-//                screenSettings.signOut();
-//
-//
-//        }
+        @Test
+        public void testLoginPasswordCorrect() throws InterruptedException, MalformedURLException {
+                screenLoginIos.loginCorrectIOS();
+                screenLoginIos.validationLoginPasswordCorrect();
+        }
         @Test
         public void testLoginLoginPasswordIncorrect() throws InterruptedException, MalformedURLException {
                 screenLoginIos.loginIncorrectIOS();
                 screenLoginIos.validationLoginPasswordIncorrect();
-//                screenLoginIos.okClick();
-//                screenLoginIos.cleanField();
         }
-//        @Test
-//        public void testSignUpIos() throws InterruptedException {
-//                screenLoginIos.SignUpIos();
-//        }
-//        @Test
-//        public void connectToPartner() throws InterruptedException {
-//                screenLoginIos.linkPartner();
-//        }
+
 @After
 public void fecharApp()  {        driver.resetApp ();
 
-}@AfterClass
+}
+@AfterClass
 public static void killApp()  {        driver.quit ();
 
 }
