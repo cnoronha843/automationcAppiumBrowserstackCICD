@@ -4,7 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e65e920b-f35f-4d18-b2df-3f1b29054abc" name="Changes" comment="Criacao de teste de login com a senha certa e com a senha errada" />
+    <list default="true" id="e65e920b-f35f-4d18-b2df-3f1b29054abc" name="Changes" comment="teste cicd">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/carlos/noronha/screen/ScreenLogin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/carlos/noronha/screen/ScreenLogin.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/carlos/noronha/test/login/TestLoginIOS.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/carlos/noronha/test/login/TestLoginIOS.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -32,12 +36,13 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "com.google.cloudcode.ide_session_index": "20230103_0002",
-    "last_opened_file_path": "/Users/premiersoft/Downloads/noteIt/appiumGithubActionBrowserstack/AutomationAppiumBrowserstack/src/test/java/carlos/noronha/test"
+    "com.google.cloudcode.ide_session_index": "20230105_0001",
+    "last_opened_file_path": "/Users/premiersoft/Downloads/noteIt/appiumGithubActionBrowserstack/AutomationAppiumBrowserstack/src/test/java/carlos/noronha/screen"
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/test/java/carlos/noronha/screen" />
       <recent name="$PROJECT_DIR$/src/test/java/carlos/noronha/test" />
       <recent name="$PROJECT_DIR$/src/test/java/carlos/noronha" />
     </key>
@@ -45,7 +50,7 @@
       <recent name="carlos.noronha.screen" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.TestLoginIOS.testLogin">
+  <component name="RunManager" selected="JUnit.TestLoginIOS">
     <configuration name="TestLoginAndroid.testLogin" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="AutomationAppiumBrowserstack" />
       <extension name="coverage">
@@ -58,6 +63,21 @@
       <option name="MAIN_CLASS_NAME" value="carlos.noronha.test.login.TestLoginAndroid" />
       <option name="METHOD_NAME" value="testLogin" />
       <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestLoginIOS" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="AutomationAppiumBrowserstack" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="carlos.noronha.test.login.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="carlos.noronha.test.login" />
+      <option name="MAIN_CLASS_NAME" value="carlos.noronha.test.login.TestLoginIOS" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -78,8 +98,43 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="TestLoginIOS.testLoginLoginPasswordCorrect" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="AutomationAppiumBrowserstack" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="carlos.noronha.test.login.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="carlos.noronha.test.login" />
+      <option name="MAIN_CLASS_NAME" value="carlos.noronha.test.login.TestLoginIOS" />
+      <option name="METHOD_NAME" value="testLoginLoginPasswordCorrect" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestLoginIOS.testLoginPasswordCorrect" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="AutomationAppiumBrowserstack" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="carlos.noronha.test.login.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="carlos.noronha.test.login" />
+      <option name="MAIN_CLASS_NAME" value="carlos.noronha.test.login.TestLoginIOS" />
+      <option name="METHOD_NAME" value="testLoginPasswordCorrect" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.TestLoginIOS" />
+        <item itemvalue="JUnit.TestLoginIOS.testLoginPasswordCorrect" />
+        <item itemvalue="JUnit.TestLoginIOS.testLoginLoginPasswordCorrect" />
         <item itemvalue="JUnit.TestLoginIOS.testLogin" />
         <item itemvalue="JUnit.TestLoginAndroid.testLogin" />
       </list>
@@ -150,7 +205,105 @@
       <option name="project" value="LOCAL" />
       <updated>1672801299436</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Alteracao do pom">
+      <created>1672801472438</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1672801472438</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Alteracao do beforeclass e do afterclass">
+      <created>1672801739880</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1672801739880</updated>
+    </task>
+    <task id="LOCAL-00011" summary="Alteracao do beforeclass e do afterclass">
+      <created>1672802021952</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1672802021952</updated>
+    </task>
+    <task id="LOCAL-00012" summary="inserindo sign out no teste de login com a senha correta">
+      <created>1672804150650</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1672804150650</updated>
+    </task>
+    <task id="LOCAL-00013" summary="alteracao do teste de senha invalida">
+      <created>1672804376556</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1672804376556</updated>
+    </task>
+    <task id="LOCAL-00014" summary="alteracao do teste de senha invalida">
+      <created>1672804516777</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1672804516777</updated>
+    </task>
+    <task id="LOCAL-00015" summary="alteracao do teste de senha invalida">
+      <created>1672804843939</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1672804843939</updated>
+    </task>
+    <task id="LOCAL-00016" summary="alteracao do teste de senha invalida">
+      <created>1672805212687</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1672805212687</updated>
+    </task>
+    <task id="LOCAL-00017" summary="alteracao do teste de senha invalida">
+      <created>1672805502127</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1672805502127</updated>
+    </task>
+    <task id="LOCAL-00018" summary="alteracao do teste de senha invalida">
+      <created>1672805757080</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1672805757080</updated>
+    </task>
+    <task id="LOCAL-00019" summary="alteracao do teste de senha invalida">
+      <created>1672805891167</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1672805891167</updated>
+    </task>
+    <task id="LOCAL-00020" summary="alteracao do teste de senha invalida">
+      <created>1672806065274</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1672806065274</updated>
+    </task>
+    <task id="LOCAL-00021" summary="alteracao do teste de senha invalida">
+      <created>1672806415393</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1672806415393</updated>
+    </task>
+    <task id="LOCAL-00022" summary="teste cicd">
+      <created>1672854668742</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1672854668742</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -173,6 +326,11 @@
     <MESSAGE value="Implementando validacao no login" />
     <MESSAGE value="removendo test android" />
     <MESSAGE value="Criacao de teste de login com a senha certa e com a senha errada" />
-    <option name="LAST_COMMIT_MESSAGE" value="Criacao de teste de login com a senha certa e com a senha errada" />
+    <MESSAGE value="Alteracao do pom" />
+    <MESSAGE value="Alteracao do beforeclass e do afterclass" />
+    <MESSAGE value="inserindo sign out no teste de login com a senha correta" />
+    <MESSAGE value="alteracao do teste de senha invalida" />
+    <MESSAGE value="teste cicd" />
+    <option name="LAST_COMMIT_MESSAGE" value="teste cicd" />
   </component>
 </project>

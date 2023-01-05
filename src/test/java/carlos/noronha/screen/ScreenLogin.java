@@ -31,7 +31,7 @@ public class ScreenLogin extends ScreenBase {
     @iOSFindBy(accessibility="more options")
     private RemoteWebElement botaoMaisOpcoes;
     @AndroidFindBy(xpath="/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.widget.FrameLayout/android.widget.LinearLayout/android.view.ViewGroup[1]/android.view.ViewGroup/android.widget.TextView")
-    @iOSFindBy(accessibility="Sign in")
+    @iOSFindBy(xpath="//XCUIElementTypeButton[3]")
     private RemoteWebElement botaoEntrar;
     @iOSFindBy(accessibility="Sign up")
     private RemoteWebElement botaoSignUp;
@@ -43,6 +43,8 @@ public class ScreenLogin extends ScreenBase {
     @AndroidFindBy(id="dadasdasd")
     @iOSFindBy(xpath="//XCUIElementTypeStaticText[@name=\"inbox\"]")
     private RemoteWebElement loginValidation;
+    @iOSFindBy(accessibility="ok")
+    private RemoteWebElement ok;
 
 
 
@@ -51,14 +53,21 @@ public class ScreenLogin extends ScreenBase {
         campoParceiro.sendKeys("4905943");
         Thread.sleep(2000);
     }
-    public void loginCorrectIOS(){
+    public void loginCorrectIOS() throws InterruptedException {
+        waitOneSecond();
         botaoMaisOpcoes.click();
-        campoEmail.sendKeys("catns.ios.noteit@gmail.com");
+        campoEmail.sendKeys("carlos.automation.ios.noteit@gmail.com");
+        waitOneSecond();
+        System.out.println("Escreve o e-mail");
         campoSenha.sendKeys("Mudar123");
+        System.out.println("Escreve a senha");
+        waitOneSecond();
+
         botaoEntrar.click();
-    }public void loginIncorrectIOS(){
+    }
+    public void loginIncorrectIOS(){
         botaoMaisOpcoes.click();
-        campoEmail.sendKeys("catns.ios.noteit@gmail.com");
+        campoEmail.sendKeys("carlos.automation.ios.noteit@gmail.com");
         campoSenha.sendKeys("Mudar");
         botaoEntrar.click();
     }
@@ -89,12 +98,32 @@ public class ScreenLogin extends ScreenBase {
         Assert.assertEquals("inbox" , loginValidation.getText());
 
 
+
+    }
+    public void inboxClick() throws InterruptedException {
+       loginValidation.click();
+
+
+
     }
 
 
-    public void validationLoginPasswordIncorrect() throws InterruptedException {
+
+
+
+
+    public void validationLoginPasswordIncorrect() throws InterruptedException, MalformedURLException {
         waitFiveSeconds();
-        System.out.println(loginValidation.getText());
+        waitOneSecond();
         Assert.assertEquals("Password is incorrect...or this user doesn’t exist yet." , passwordIncorrect.getText());
+    }
+    public void okClick() throws MalformedURLException, InterruptedException {
+        longPressByElement(ok,1000);
+        waitOneSecond();
+
+    }
+    public void cleanField() throws MalformedURLException {
+        campoEmail.clear();
+        campoSenha.clear();
     }
 }
