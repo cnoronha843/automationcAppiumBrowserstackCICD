@@ -1,10 +1,10 @@
-name: Testes regressivos
+name: NoteIt Test on Pipeline
 
 on:
   pull_request:
     branch: [ master ]
   schedule:
-    - cron: '*/5 * * * 1-5'
+    - cron: '*/5 * * 1-5'
 
 jobs:
   RunTest:
