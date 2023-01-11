@@ -1,6 +1,7 @@
 package carlos.noronha.screen;
 
 import carlos.noronha.core.DriverFactory;
+import carlos.noronha.core.ScreenBase;
 import io.appium.java_client.AppiumDriver;
 import io.appium.java_client.MobileElement;
 import io.appium.java_client.TouchAction;
@@ -12,14 +13,21 @@ import io.appium.java_client.touch.offset.ElementOption;
 import io.appium.java_client.touch.offset.PointOption;
 import org.junit.Assert;
 import org.openqa.selenium.By;
+import org.openqa.selenium.remote.ErrorCodes;
 import org.openqa.selenium.remote.RemoteWebElement;
 import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.net.MalformedURLException;
 import java.time.Duration;
 
-public class ScreenDrawing {
+import static org.aspectj.bridge.MessageUtil.info;
+
+public class ScreenDrawing extends ScreenBase {
     private static AppiumDriver<RemoteWebElement> driver;
+    private static String justnowAfterSendNote="just now";
+    private static String justnowAfterSendNot="Just now";
 
     public ScreenDrawing(AppiumDriver<RemoteWebElement> driver){
         PageFactory.initElements(new AppiumFieldDecorator(driver), this);
@@ -27,7 +35,7 @@ public class ScreenDrawing {
 
 
     @AndroidFindBy(id="button_start")
-    @iOSFindBy(accessibility="Back")
+    @iOSFindBy(accessibility="back-icon")
     private RemoteWebElement backButton;
     @AndroidFindBy(id="me.bukovitz.noteit.beta:id/btn_new_note")
     @iOSFindBy(xpath="//XCUIElementTypeButton[@name=\"plus-icon\"]")
@@ -38,13 +46,14 @@ public class ScreenDrawing {
     @AndroidFindBy(id="me.bukovitz.noteit.beta:id/parent_open_camera")
     @iOSFindBy(accessibility="camera_icon")
     private RemoteWebElement camera;
+    @iOSFindBy(accessibility = "OK")
     @AndroidFindBy(id="com.android.permissioncontroller:id/permission_allow_foreground_only_button")
     private RemoteWebElement permissionCamera;
     @AndroidFindBy(id="drawing")
-    @iOSFindBy(xpath="//XCUIElementTypeApplication[@name=\"noteit\"]/XCUIElementTypeWindow/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeButton[3]")
+    @iOSFindBy(xpath="//XCUIElementTypeApplication[@name=\"noteit\"]/XCUIElementTypeWindow/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeButton[2]")
     private RemoteWebElement takePicture;
     @AndroidFindBy(id="btn_trash")
-    @iOSFindBy(accessibility="trash-icon")
+    @iOSFindBy(accessibility="inbox-text")
     private RemoteWebElement trash;
     @AndroidFindBy(id="me.bukovitz.noteit.beta:id/btn_undo")
     @iOSFindBy(accessibility="undo_icon")
@@ -58,8 +67,8 @@ public class ScreenDrawing {
     @AndroidFindBy(id="btn_exit")
     private static RemoteWebElement closeColors;
     @AndroidFindBy(id="txt_noteit_fun")
-    @iOSFindBy(accessibility="Just now")
-    private static RemoteWebElement justNow;
+    @iOSFindBy(xpath="//XCUIElementTypeStaticText[1]")
+    private static RemoteWebElement share;
     @AndroidFindBy(id="btn_show_tools")
     @iOSFindBy(accessibility="show tools")
     private static RemoteWebElement showTools;
@@ -109,16 +118,17 @@ public class ScreenDrawing {
     @iOSFindBy(className="XCUIElementTypeSlider")
     private static RemoteWebElement sliderBrush;
 
-    public RemoteWebElement getPaletaCoresToolKit() {
-        return paletaCoresToolKit;
-    }
 
     @AndroidFindBy(xpath="ripple")
     @iOSFindBy(xpath="//XCUIElementTypeApplication[@name=\"noteit\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeOther/XCUIElementTypeButton")
     private RemoteWebElement paletaCoresToolKit;
 
 
+    public RemoteWebElement getPaletaCoresToolKit() {
+        return paletaCoresToolKit;
+    }
     public void paletaCoresInicial() throws InterruptedException {
+         Thread.sleep(2000);
         paletaCoresInicial.click();
          Thread.sleep(2000);
 
@@ -438,16 +448,8 @@ public class ScreenDrawing {
     public void assertHighlightTopIOS(){
         Assert.assertTrue(highlight_base_selected.isDisplayed());
     }
-    public static void assertSendNote(){
-        System.out.println(justNow.getText());
-        if (justNow.getText() == "noteit app"){
-
-        Assert.assertEquals("noteit app", justNow.getText() );
-        }
-        if (justNow.getText() == "Just now"){
-
-            Assert.assertEquals("Just now", justNow.getText() );
-        }
+    public static void assertSendNoteIOS(){
+       Assert.assertEquals("share", share.getText());
     }
     public static void verifyShowToolsAndroid() throws InterruptedException {
         Thread.sleep(1000);
@@ -457,10 +459,13 @@ public class ScreenDrawing {
         }
     }
     public static void verifyShowToolsIos() throws InterruptedException {
-        Thread.sleep(3000);
-        if (!toolKit.isDisplayed()){
-            showTools.click();
-        }
+
+        try {
+
+        showTools.click();
+        } catch (Exception e){}
+
+
     }
     public static void closeColors( ) throws MalformedURLException, InterruptedException {
 
@@ -470,29 +475,13 @@ public class ScreenDrawing {
             closeColors.click();
 //        }
     }
-    public static void sliderBrushMinimoAndroid() throws MalformedURLException, InterruptedException {
+    public  void sliderBrushMinimoAndroid() throws MalformedURLException, InterruptedException {
         swipeElement((MobileElement) sliderBrush,0.9,0.1);
     }
-    public static void sliderBrushMaximoAndroid() throws MalformedURLException, InterruptedException {
+    public  void sliderBrushMaximoAndroid() throws MalformedURLException, InterruptedException {
         swipeElement((MobileElement) sliderBrush,0.1,0.9);
     }
-    public static void swipeElement(MobileElement element, double inicio, double fim) throws MalformedURLException, InterruptedException {
-        //pegar o tamanho da tela
-        //Denifinir y
-        int y = element.getLocation ().y + (element.getSize ().height/2);
-        //Definir x inicial
-        int start_x = (int) (element.getSize ().width * inicio);
-        //Definir x final
-        int end_x = (int) (element.getSize ().width * fim);
-        //pressionar um ponto da tela
-        new TouchAction (driver)
-                .press (PointOption.point(start_x,y))//segura neste ponto da tela
-                .waitAction (WaitOptions.waitOptions(Duration.ofMillis(500)))// espera por 500 milisegundos
-                .moveTo (PointOption.point(end_x,y))//arrasta até este ponto
-                .release ()//solta a tela
-                .perform ();
 
-    }
     public void trashDrawing() throws InterruptedException, MalformedURLException {
         trash.click();
         Thread.sleep(3000);
@@ -509,17 +498,20 @@ public class ScreenDrawing {
         Thread.sleep(1000);
 
     }
-    public void takePictureIOS() throws InterruptedException, MalformedURLException {
-        Thread.sleep(1000);
+    public void permissionCameraClick() throws MalformedURLException, InterruptedException {
+        longPressByElement(permissionCamera,500);
+        waitOneSecond();
+    }
+    public void openCamera() throws MalformedURLException, InterruptedException {
         camera.click();
-        Thread.sleep(1000);
-        TouchAction obj2    = new TouchAction(DriverFactory.getDriver(""));
-        obj2.press(ElementOption.element(takePicture))
-                .waitAction (WaitOptions.waitOptions(Duration.ofMillis(1000)))
-                .release()
-                .perform();
-        Thread.sleep(3000);
-    }public void takePictureAndroid() throws InterruptedException, MalformedURLException {
+        waitOneSecond();
+    }
+    public void  takePictureIOS() throws InterruptedException, MalformedURLException {
+
+        longPressByElement(takePicture, 500);
+        waitOneSecond();
+    }
+    public void takePictureAndroid() throws InterruptedException, MalformedURLException {
         Thread.sleep(1000);
         camera.click();
         Thread.sleep(1000);
@@ -545,56 +537,13 @@ public class ScreenDrawing {
 
     }
     public void returnToCanvas() throws InterruptedException {
+        waitOneSecond();
         backButton.click();
+        waitFiveSeconds();
+
         newNote.click();
     }
 
-
-
-
-
-
-    public  void fullTestOfAdvancedToolKit() throws InterruptedException, MalformedURLException {
-        Thread.sleep(2000);
-        verifyShowToolsAndroid();
-        Thread.sleep(2000);
-        paletaCoresInicial();
-        setColorRed();
-        closeColors();
-        accessToolKit();
-        sliderBrushMinimo();
-        drawN();
-        sliderBrushMaximo();
-        drawO();
-        sliderBrushMedio();
-        drawT();
-        paletaCoresInicial();
-        setColorBlack();
-        closeColors();
-        selectPecil();
-        sliderBrushMinimo();
-        drawE();
-        sliderBrushMaximo();
-        drawI();
-        sliderBrushMedio();
-        drawLastT();
-        selectHighlightTop();
-        paletaCoresInicial();
-        setColorGreen();
-        closeColors();
-        sliderBrushMinimo();
-        drawLinePencil(50,275,320,275);
-        sliderBrushMaximo();
-        drawLinePencil(50,310,320,310);
-        sliderBrushMedio();
-        drawLinePencil(50,370,320,370);
-        Thread.sleep(5000);
-        doneClick();
-        Thread.sleep(5000);
-        sendNote(DriverFactory.getDriver(""));
-        Thread.sleep(5000);
-        assertSendNote();
-    }
 
 
 }

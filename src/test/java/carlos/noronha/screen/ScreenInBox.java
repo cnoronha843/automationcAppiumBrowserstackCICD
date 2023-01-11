@@ -1,5 +1,6 @@
 package carlos.noronha.screen;
 
+import carlos.noronha.core.DriverFactory;
 import carlos.noronha.core.ScreenBase;
 import io.appium.java_client.AppiumDriver;
 import io.appium.java_client.pagefactory.AndroidFindBy;
@@ -8,6 +9,8 @@ import io.appium.java_client.pagefactory.iOSFindBy;
 import org.junit.Assert;
 import org.openqa.selenium.remote.RemoteWebElement;
 import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.net.MalformedURLException;
 import java.sql.SQLException;
@@ -19,6 +22,8 @@ public class ScreenInBox extends ScreenBase {
     public ScreenInBox(AppiumDriver<RemoteWebElement> driver){
         PageFactory.initElements(new AppiumFieldDecorator(driver), this);
     }
+    private static WebDriverWait wait;
+    private static AppiumDriver driver;
     @AndroidFindBy(xpath="//android.widget.Button[@text='Allow']")
     private RemoteWebElement permissionContacts;
 
@@ -63,11 +68,13 @@ public class ScreenInBox extends ScreenBase {
         waitOneSecond();
     }
     public void menuInbox() throws MalformedURLException, InterruptedException {
-        menuInbox.click();
-        waitOneSecond();
+
+        longPressByElement(menuInbox,500);
+
 
     }
     public void goToInbox() throws MalformedURLException, InterruptedException {
+
 
         longPressByElement(inBox,500);
     }

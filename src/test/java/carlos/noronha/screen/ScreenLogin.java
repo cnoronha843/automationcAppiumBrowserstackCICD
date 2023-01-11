@@ -64,6 +64,8 @@ public class ScreenLogin extends ScreenBase {
         waitOneSecond();
 
         botaoEntrar.click();
+        waitOneSecond();
+        waitOneSecond();
     }
     public void loginIncorrectIOS(){
         botaoMaisOpcoes.click();
@@ -93,7 +95,6 @@ public class ScreenLogin extends ScreenBase {
         Thread.sleep(1000);
     }
     public void validationLoginPasswordCorrect() throws InterruptedException {
-        waitFiveSeconds();
         System.out.println(loginValidation.getText());
         Assert.assertEquals("inbox" , loginValidation.getText());
 
@@ -106,12 +107,6 @@ public class ScreenLogin extends ScreenBase {
 
 
     }
-
-
-
-
-
-
     public void validationLoginPasswordIncorrect() throws InterruptedException, MalformedURLException {
         waitFiveSeconds();
         waitOneSecond();
