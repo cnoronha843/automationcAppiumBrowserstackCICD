@@ -41,11 +41,11 @@ public class DriverFactory {
 
     private static IOSDriver capsiOSrowserstack() throws MalformedURLException {
         DesiredCapabilities capabilities = new DesiredCapabilities();
-        capabilities.setCapability("browserstack.user", "carlossantanna_dNOx5M");
-        capabilities.setCapability("browserstack.key", "qHEKNXM5qfL9kgq9ix5d");
+        capabilities.setCapability("browserstack.user", "carlosandretrigu_MEyf17");
+        capabilities.setCapability("browserstack.key", "q1rHfwaehyiVAxjGcUcS");
         capabilities.setCapability("platformVersion", "16.0");
         capabilities.setCapability("deviceName", "iPhone 14");
-        capabilities.setCapability("app", "bs://378e1f6202647c36652e5859907ac706607cc600");
+        capabilities.setCapability("app", "bs://edd102846bd1397130d5d725291f828c2e076e64");
 
 
         return (IOSDriver) (driver = new IOSDriver<RemoteWebElement>(new URL("http://hub.browserstack.com/wd/hub"), capabilities));

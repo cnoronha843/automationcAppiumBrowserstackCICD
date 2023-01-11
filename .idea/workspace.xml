@@ -4,20 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e65e920b-f35f-4d18-b2df-3f1b29054abc" name="Changes" comment="Schedule Noteit test on device farm">
-      <change afterPath="$PROJECT_DIR$/src/test/java/carlos/noronha/core/TestBase.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/carlos/noronha/screen/ScreenLinkPartner.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/carlos/noronha/screen/ScreenSinup.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/carlos/noronha/test/drawing/TestDrawingIOS.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/carlos/noronha/test/menuSettings/TestMenuSettingsIOS.java" afterDir="false" />
+    <list default="true" id="e65e920b-f35f-4d18-b2df-3f1b29054abc" name="Changes" comment="Login code refactoring, drawing and inbox menu">
       <change afterPath="$PROJECT_DIR$/src/test/java/carlos/noronha/test/sinup/TestSignupIOS.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/carlos/noronha/core/ScreenBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/carlos/noronha/core/ScreenBase.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/carlos/noronha/screen/ScreenDrawing.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/carlos/noronha/screen/ScreenDrawing.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/carlos/noronha/screen/ScreenInBox.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/carlos/noronha/screen/ScreenInBox.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/carlos/noronha/screen/ScreenLogin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/carlos/noronha/screen/ScreenLogin.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/carlos/noronha/screen/ScreenMenuSettings.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/carlos/noronha/screen/ScreenMenuSettings.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/carlos/noronha/test/login/TestLoginIOS.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/carlos/noronha/test/login/TestLoginIOS.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -378,7 +366,14 @@
       <option name="project" value="LOCAL" />
       <updated>1673469153804</updated>
     </task>
-    <option name="localTasksCounter" value="31" />
+    <task id="LOCAL-00031" summary="Login code refactoring, drawing and inbox menu">
+      <created>1673472252625</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1673472252625</updated>
+    </task>
+    <option name="localTasksCounter" value="32" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -408,7 +403,8 @@
     <MESSAGE value="teste cicd" />
     <MESSAGE value="Agendamento dos teste IOS" />
     <MESSAGE value="Schedule Noteit test on device farm" />
-    <option name="LAST_COMMIT_MESSAGE" value="Schedule Noteit test on device farm" />
+    <MESSAGE value="Login code refactoring, drawing and inbox menu" />
+    <option name="LAST_COMMIT_MESSAGE" value="Login code refactoring, drawing and inbox menu" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
