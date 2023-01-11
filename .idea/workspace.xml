@@ -11,7 +11,7 @@
       <change afterPath="$PROJECT_DIR$/src/test/java/carlos/noronha/test/drawing/TestDrawingIOS.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/test/java/carlos/noronha/test/menuSettings/TestMenuSettingsIOS.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/test/java/carlos/noronha/test/sinup/TestSignupIOS.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.github/workflows/regressive.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/regressive.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/carlos/noronha/core/ScreenBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/carlos/noronha/core/ScreenBase.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/carlos/noronha/screen/ScreenDrawing.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/carlos/noronha/screen/ScreenDrawing.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/carlos/noronha/screen/ScreenInBox.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/carlos/noronha/screen/ScreenInBox.java" afterDir="false" />
@@ -71,7 +71,7 @@
       <recent name="carlos.noronha.screen" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.TestMenuSettingsIOS.followTheIg">
+  <component name="RunManager" selected="JUnit.TestMenuSettingsIOS">
     <configuration name="TestDrawingIOS" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="AutomationAppiumBrowserstack" />
       <extension name="coverage">
@@ -87,7 +87,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestDrawingIOS.trashDrawing" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="TestDrawingIOS.sendNoteAfterTrashingADrawing" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="AutomationAppiumBrowserstack" />
       <extension name="coverage">
         <pattern>
@@ -97,7 +97,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="carlos.noronha.test.drawing" />
       <option name="MAIN_CLASS_NAME" value="carlos.noronha.test.drawing.TestDrawingIOS" />
-      <option name="METHOD_NAME" value="trashDrawing" />
+      <option name="METHOD_NAME" value="sendNoteAfterTrashingADrawing" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -152,11 +152,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.TestMenuSettingsIOS.followTheIg" />
         <item itemvalue="JUnit.TestMenuSettingsIOS" />
-        <item itemvalue="JUnit.TestMenuSettingsIOS.cancelILoveNoteIt" />
         <item itemvalue="JUnit.TestDrawingIOS" />
-        <item itemvalue="JUnit.TestDrawingIOS.trashDrawing" />
+        <item itemvalue="JUnit.TestDrawingIOS.sendNoteAfterTrashingADrawing" />
+        <item itemvalue="JUnit.TestMenuSettingsIOS.followTheIg" />
+        <item itemvalue="JUnit.TestMenuSettingsIOS.cancelILoveNoteIt" />
       </list>
     </recent_temporary>
   </component>
@@ -337,7 +337,14 @@
       <option name="project" value="LOCAL" />
       <updated>1673460005882</updated>
     </task>
-    <option name="localTasksCounter" value="25" />
+    <task id="LOCAL-00025" summary="Agendamento dos teste IOS">
+      <created>1673460494517</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1673460494517</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
