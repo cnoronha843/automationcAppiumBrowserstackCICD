@@ -4,15 +4,34 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e65e920b-f35f-4d18-b2df-3f1b29054abc" name="Changes" comment="teste cicd">
+    <list default="true" id="e65e920b-f35f-4d18-b2df-3f1b29054abc" name="Changes" comment="Criacao do projeto e integracao com browserstack de login.">
+      <change afterPath="$PROJECT_DIR$/src/test/java/carlos/noronha/core/TestBase.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/carlos/noronha/screen/ScreenLinkPartner.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/carlos/noronha/screen/ScreenSinup.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/carlos/noronha/test/drawing/TestDrawingIOS.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/carlos/noronha/test/menuSettings/TestMenuSettingsIOS.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/carlos/noronha/test/sinup/TestSignupIOS.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.github/workflows/regressive.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/regressive.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/carlos/noronha/core/DriverFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/carlos/noronha/core/DriverFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/carlos/noronha/core/ScreenBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/carlos/noronha/core/ScreenBase.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/carlos/noronha/screen/ScreenDrawing.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/carlos/noronha/screen/ScreenDrawing.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/carlos/noronha/screen/ScreenInBox.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/carlos/noronha/screen/ScreenInBox.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/carlos/noronha/screen/ScreenLogin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/carlos/noronha/screen/ScreenLogin.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/carlos/noronha/screen/ScreenMenuSettings.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/carlos/noronha/screen/ScreenMenuSettings.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/carlos/noronha/test/login/TestLoginIOS.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/carlos/noronha/test/login/TestLoginIOS.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
@@ -36,95 +55,98 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "com.google.cloudcode.ide_session_index": "20230105_0001",
-    "last_opened_file_path": "/Users/premiersoft/Downloads/noteIt/appiumGithubActionBrowserstack/AutomationAppiumBrowserstack/src/test/java/carlos/noronha/screen"
+    "com.google.cloudcode.ide_session_index": "20230111_0005",
+    "last_opened_file_path": "/Users/premiersoft/Downloads/noteIt/appiumGithubActionBrowserstack/AutomationAppiumBrowserstack/src/test/java/carlos/noronha/test"
   }
 }]]></component>
   <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="carlos.noronha.core" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src/test/java/carlos/noronha/screen" />
       <recent name="$PROJECT_DIR$/src/test/java/carlos/noronha/test" />
+      <recent name="$PROJECT_DIR$/src/test/java/carlos/noronha/test/login" />
+      <recent name="$PROJECT_DIR$/src/test/java/carlos/noronha/screen" />
       <recent name="$PROJECT_DIR$/src/test/java/carlos/noronha" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="carlos.noronha.screen" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.TestLoginIOS">
-    <configuration name="TestLoginAndroid.testLogin" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.TestMenuSettingsIOS.followTheIg">
+    <configuration name="TestDrawingIOS" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="AutomationAppiumBrowserstack" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="carlos.noronha.test.login.*" />
+          <option name="PATTERN" value="carlos.noronha.test.drawing.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="carlos.noronha.test.login" />
-      <option name="MAIN_CLASS_NAME" value="carlos.noronha.test.login.TestLoginAndroid" />
-      <option name="METHOD_NAME" value="testLogin" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="TestLoginIOS" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="AutomationAppiumBrowserstack" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="carlos.noronha.test.login.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="carlos.noronha.test.login" />
-      <option name="MAIN_CLASS_NAME" value="carlos.noronha.test.login.TestLoginIOS" />
+      <option name="PACKAGE_NAME" value="carlos.noronha.test.drawing" />
+      <option name="MAIN_CLASS_NAME" value="carlos.noronha.test.drawing.TestDrawingIOS" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestLoginIOS.testLogin" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="TestDrawingIOS.trashDrawing" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="AutomationAppiumBrowserstack" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="carlos.noronha.test.login.*" />
+          <option name="PATTERN" value="carlos.noronha.test.drawing.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="carlos.noronha.test.login" />
-      <option name="MAIN_CLASS_NAME" value="carlos.noronha.test.login.TestLoginIOS" />
-      <option name="METHOD_NAME" value="testLogin" />
+      <option name="PACKAGE_NAME" value="carlos.noronha.test.drawing" />
+      <option name="MAIN_CLASS_NAME" value="carlos.noronha.test.drawing.TestDrawingIOS" />
+      <option name="METHOD_NAME" value="trashDrawing" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestLoginIOS.testLoginLoginPasswordCorrect" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="TestMenuSettingsIOS" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="AutomationAppiumBrowserstack" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="carlos.noronha.test.login.*" />
+          <option name="PATTERN" value="carlos.noronha.test.menuSettings.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="carlos.noronha.test.login" />
-      <option name="MAIN_CLASS_NAME" value="carlos.noronha.test.login.TestLoginIOS" />
-      <option name="METHOD_NAME" value="testLoginLoginPasswordCorrect" />
+      <option name="PACKAGE_NAME" value="carlos.noronha.test.menuSettings" />
+      <option name="MAIN_CLASS_NAME" value="carlos.noronha.test.menuSettings.TestMenuSettingsIOS" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestMenuSettingsIOS.cancelILoveNoteIt" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="AutomationAppiumBrowserstack" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="carlos.noronha.test.menuSettings.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="carlos.noronha.test.menuSettings" />
+      <option name="MAIN_CLASS_NAME" value="carlos.noronha.test.menuSettings.TestMenuSettingsIOS" />
+      <option name="METHOD_NAME" value="cancelILoveNoteIt" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestLoginIOS.testLoginPasswordCorrect" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="TestMenuSettingsIOS.followTheIg" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="AutomationAppiumBrowserstack" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="carlos.noronha.test.login.*" />
+          <option name="PATTERN" value="carlos.noronha.test.menuSettings.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="carlos.noronha.test.login" />
-      <option name="MAIN_CLASS_NAME" value="carlos.noronha.test.login.TestLoginIOS" />
-      <option name="METHOD_NAME" value="testLoginPasswordCorrect" />
+      <option name="PACKAGE_NAME" value="carlos.noronha.test.menuSettings" />
+      <option name="MAIN_CLASS_NAME" value="carlos.noronha.test.menuSettings.TestMenuSettingsIOS" />
+      <option name="METHOD_NAME" value="followTheIg" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -132,11 +154,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.TestLoginIOS" />
-        <item itemvalue="JUnit.TestLoginIOS.testLoginPasswordCorrect" />
-        <item itemvalue="JUnit.TestLoginIOS.testLoginLoginPasswordCorrect" />
-        <item itemvalue="JUnit.TestLoginIOS.testLogin" />
-        <item itemvalue="JUnit.TestLoginAndroid.testLogin" />
+        <item itemvalue="JUnit.TestMenuSettingsIOS.followTheIg" />
+        <item itemvalue="JUnit.TestMenuSettingsIOS" />
+        <item itemvalue="JUnit.TestMenuSettingsIOS.cancelILoveNoteIt" />
+        <item itemvalue="JUnit.TestDrawingIOS" />
+        <item itemvalue="JUnit.TestDrawingIOS.trashDrawing" />
       </list>
     </recent_temporary>
   </component>
@@ -332,5 +354,52 @@
     <MESSAGE value="alteracao do teste de senha invalida" />
     <MESSAGE value="teste cicd" />
     <option name="LAST_COMMIT_MESSAGE" value="teste cicd" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/test/java/carlos/noronha/test/drawing/TestDrawingIOS.java</url>
+          <line>78</line>
+          <properties class="carlos.noronha.test.drawing.TestDrawingIOS" method="trashDrawing">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/test/java/carlos/noronha/screen/ScreenDrawing.java</url>
+          <line>534</line>
+          <properties class="carlos.noronha.screen.ScreenDrawing" method="validateCleanScreen">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/test/java/carlos/noronha/test/drawing/TestDrawingIOS.java</url>
+          <line>124</line>
+          <properties class="carlos.noronha.test.drawing.TestDrawingIOS">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/test/java/carlos/noronha/test/menuSettings/TestMenuSettingsIOS.java</url>
+          <line>62</line>
+          <properties class="carlos.noronha.test.menuSettings.TestMenuSettingsIOS">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/carlos/noronha/test/drawing/TestDrawingIOS.java</url>
+          <line>79</line>
+          <option name="timeStamp" value="6" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

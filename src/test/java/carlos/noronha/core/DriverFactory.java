@@ -8,9 +8,16 @@ import org.openqa.selenium.remote.RemoteWebElement;
 
 import java.net.MalformedURLException;
 import java.net.URL;
+import java.util.concurrent.TimeUnit;
 
 public class DriverFactory {
     private static AppiumDriver<RemoteWebElement> driver;
+    public static void killDriver(){
+        if (driver!= null){
+            driver.quit ();
+            driver= null;
+        }
+    }
 
 
     public static AppiumDriver getDriver(String platform) throws MalformedURLException {
@@ -34,11 +41,13 @@ public class DriverFactory {
 
     private static IOSDriver capsiOSrowserstack() throws MalformedURLException {
         DesiredCapabilities capabilities = new DesiredCapabilities();
-        capabilities.setCapability("browserstack.user", "carlosandrenoron_2rgUhz");
-        capabilities.setCapability("browserstack.key", "soYp1G5VseKXeFGsGdEJ");
-        capabilities.setCapability("platformVersion", "15.0");
-        capabilities.setCapability("deviceName", "iPhone 11 Pro");
-        capabilities.setCapability("app", "bs://dbc17129bab44470871b63b41dd4ccee8ef5ef65");
+        capabilities.setCapability("browserstack.user", "carlossantanna_dNOx5M");
+        capabilities.setCapability("browserstack.key", "qHEKNXM5qfL9kgq9ix5d");
+        capabilities.setCapability("platformVersion", "16.0");
+        capabilities.setCapability("deviceName", "iPhone 14");
+        capabilities.setCapability("app", "bs://378e1f6202647c36652e5859907ac706607cc600");
+
+
         return (IOSDriver) (driver = new IOSDriver<RemoteWebElement>(new URL("http://hub.browserstack.com/wd/hub"), capabilities));
     }
     public static AndroidDriver capsAndroidBrowserstack() throws MalformedURLException {
