@@ -11,7 +11,6 @@
       <change afterPath="$PROJECT_DIR$/src/test/java/carlos/noronha/test/drawing/TestDrawingIOS.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/test/java/carlos/noronha/test/menuSettings/TestMenuSettingsIOS.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/test/java/carlos/noronha/test/sinup/TestSignupIOS.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/carlos/noronha/core/ScreenBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/carlos/noronha/core/ScreenBase.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/carlos/noronha/screen/ScreenDrawing.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/carlos/noronha/screen/ScreenDrawing.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/carlos/noronha/screen/ScreenInBox.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/carlos/noronha/screen/ScreenInBox.java" afterDir="false" />
@@ -344,7 +343,21 @@
       <option name="project" value="LOCAL" />
       <updated>1673460494517</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="Agendamento dos teste IOS">
+      <created>1673465616482</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1673465616482</updated>
+    </task>
+    <task id="LOCAL-00027" summary="Agendamento dos teste IOS">
+      <created>1673465832325</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1673465832325</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
