@@ -4,9 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e65e920b-f35f-4d18-b2df-3f1b29054abc" name="Changes" comment="Change trigger time to 60 minutes">
+    <list default="true" id="e65e920b-f35f-4d18-b2df-3f1b29054abc" name="Changes" comment="Change trigger time to once a day">
       <change afterPath="$PROJECT_DIR$/src/test/java/carlos/noronha/test/sinup/TestSignupIOS.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/carlos/noronha/core/DriverFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/carlos/noronha/core/DriverFactory.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/carlos/noronha/screen/ScreenSinup.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/carlos/noronha/screen/ScreenSinup.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -43,7 +43,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "com.google.cloudcode.ide_session_index": "20230111_0007",
+    "com.google.cloudcode.ide_session_index": "20230112_0001",
     "last_opened_file_path": "/Users/premiersoft/Downloads/noteIt/appiumGithubActionBrowserstack/AutomationAppiumBrowserstack/src/test/java/carlos/noronha/test"
   }
 }]]></component>
@@ -396,7 +396,14 @@
       <option name="project" value="LOCAL" />
       <updated>1673474037115</updated>
     </task>
-    <option name="localTasksCounter" value="35" />
+    <task id="LOCAL-00035" summary="Change trigger time to once a day">
+      <created>1673535407252</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1673535407252</updated>
+    </task>
+    <option name="localTasksCounter" value="36" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -430,7 +437,8 @@
     <MESSAGE value="Change trial lincese" />
     <MESSAGE value="Change time of trigger" />
     <MESSAGE value="Change trigger time to 60 minutes" />
-    <option name="LAST_COMMIT_MESSAGE" value="Change trigger time to 60 minutes" />
+    <MESSAGE value="Change trigger time to once a day" />
+    <option name="LAST_COMMIT_MESSAGE" value="Change trigger time to once a day" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
