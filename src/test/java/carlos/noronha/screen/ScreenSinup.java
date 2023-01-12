@@ -58,17 +58,17 @@ public class ScreenSinup extends ScreenBase {
     @AndroidFindBy(xpath="//android.widget.TextView[@text='terms-of-service.pdf']")
     private RemoteWebElement pdfReader;
     public void openWithDriveClick() throws InterruptedException {
-        waitOneSecond();
+
         openWithDrive.click();
 
     }
     public String pdfReaderGetText() throws InterruptedException {
-        waitOneSecond();
+
         return pdfReader.getText();
 
     }
     public void validationPagePrivacyPolicyAndroid() throws InterruptedException {
-        waitOneSecond();
+
         Assert.assertEquals("terms-of-service.pdf",pdfReaderGetText());
     }
     public void validationPagePrivacyPolicyIOS() throws InterruptedException {
@@ -76,41 +76,47 @@ public class ScreenSinup extends ScreenBase {
     }
 
     public String pagePrivacyPolicyGetText() throws InterruptedException {
-        waitOneSecond();
+
         return pagePrivacyPolicy.getText();
 
     }
     public void byPressingNextTermsPrivacyPolicyClick() throws InterruptedException {
         byPressingNextTermsPrivacyPolicy.click();
-        waitOneSecond();
+
     }
 
 
     public void phoneNumberClick() throws InterruptedException {
         sinupPhoneNumber.click();
-         waitOneSecond();
+
     }
     public void phoneNumberGetText(){
         phoneNumberField.click();
     }
     public void setPhoneNumber() throws InterruptedException {
-        waitOneSecond();
+
         phoneNumberField.sendKeys("21972136937");
         nextButton.click();
-        waitFiveSeconds();
+
     }
     public void selectedCountryClick() throws MalformedURLException {
-         longPressByElement(selectedCountry,1000);
+        selectedCountry.click();
+        //         longPressByElement(selectedCountry,1000);
     }
     public void searchCountryBrazil(){
         searchCountry.sendKeys("Bra");
         brazilCountry.click();
     }
-    public void notGettingMyCodeClick(){
+    public void notGettingMyCodeClick() throws InterruptedException, MalformedURLException {
         notGettingMyCode.click();
+
+//        longPressByElement(notGettingMyCode, 1000);1000
+
     }
-    public void getHelpFromTeamNoteitClick(){
-        getHelpFromTeamNoteit.click();
+    public void getHelpFromTeamNoteitClick() throws MalformedURLException {
+getHelpFromTeamNoteit.click();
+//        longPressByElement(getHelpFromTeamNoteit, 1000);
+
     }
     public void validationEmailScreeen() throws InterruptedException {
         Thread.sleep(5000);

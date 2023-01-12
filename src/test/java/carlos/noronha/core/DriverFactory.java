@@ -43,8 +43,8 @@ public class DriverFactory {
         DesiredCapabilities capabilities = new DesiredCapabilities();
         capabilities.setCapability("browserstack.user", "carlosandretrigu_iEGT0c");
         capabilities.setCapability("browserstack.key", "xEsCy3Tpan569YsFWWUK");
-        capabilities.setCapability("platformVersion", "16.0");
-        capabilities.setCapability("deviceName", "iPhone 14");
+        capabilities.setCapability("platformVersion", "15.0");
+        capabilities.setCapability("deviceName", "iPhone 13");
         capabilities.setCapability("app", "bs://25cdd024363df6e761d84a5cbf0c1f3a9f71fafc");
 
 

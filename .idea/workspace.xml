@@ -4,8 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e65e920b-f35f-4d18-b2df-3f1b29054abc" name="Changes" comment="Change trigger time to once a day">
+    <list default="true" id="e65e920b-f35f-4d18-b2df-3f1b29054abc" name="Changes" comment="Change license">
       <change afterPath="$PROJECT_DIR$/src/test/java/carlos/noronha/test/sinup/TestSignupIOS.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.github/workflows/regressive.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/regressive.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/carlos/noronha/core/DriverFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/carlos/noronha/core/DriverFactory.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/carlos/noronha/screen/ScreenSinup.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/carlos/noronha/screen/ScreenSinup.java" afterDir="false" />
     </list>
@@ -43,7 +45,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "com.google.cloudcode.ide_session_index": "20230112_0001",
+    "com.google.cloudcode.ide_session_index": "20230112_0003",
     "last_opened_file_path": "/Users/premiersoft/Downloads/noteIt/appiumGithubActionBrowserstack/AutomationAppiumBrowserstack/src/test/java/carlos/noronha/test"
   }
 }]]></component>
@@ -403,7 +405,14 @@
       <option name="project" value="LOCAL" />
       <updated>1673535407252</updated>
     </task>
-    <option name="localTasksCounter" value="36" />
+    <task id="LOCAL-00036" summary="Change license">
+      <created>1673536235906</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1673536235906</updated>
+    </task>
+    <option name="localTasksCounter" value="37" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -438,7 +447,8 @@
     <MESSAGE value="Change time of trigger" />
     <MESSAGE value="Change trigger time to 60 minutes" />
     <MESSAGE value="Change trigger time to once a day" />
-    <option name="LAST_COMMIT_MESSAGE" value="Change trigger time to once a day" />
+    <MESSAGE value="Change license" />
+    <option name="LAST_COMMIT_MESSAGE" value="Change license" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -481,7 +491,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/test/java/carlos/noronha/test/sinup/TestSignupIOS.java</url>
-          <line>32</line>
+          <line>34</line>
           <properties class="carlos.noronha.test.sinup.TestSignupIOS" method="helpTeamNoteItTest">
             <option name="EMULATED" value="true" />
             <option name="WATCH_EXIT" value="false" />
