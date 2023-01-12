@@ -4,7 +4,7 @@ on:
   pull_request:
     branch: [ master ]
   schedule:
-    - cron: '*/60 * * * 1-5'
+    - cron: '00 12 * * 1-5'
 
 jobs:
   RunTest:
