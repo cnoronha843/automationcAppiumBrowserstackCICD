@@ -5,15 +5,14 @@ import carlos.noronha.core.TestBase;
 import carlos.noronha.screen.ScreenDrawing;
 import carlos.noronha.screen.ScreenLogin;
 import io.appium.java_client.AppiumDriver;
-import org.junit.*;
+import org.junit.Before;
+import org.junit.Test;
 import org.openqa.selenium.remote.RemoteWebElement;
 
 import java.net.MalformedURLException;
 
-import static carlos.noronha.screen.ScreenDrawing.*;
 
-
-public class TestDrawingIOS extends TestBase {
+public class TestDrawingIOSiPhone11ProMax extends TestBase {
         private static ScreenDrawing screenDrawing;
         private static AppiumDriver<RemoteWebElement> driver;
         private static ScreenLogin screenLoginIos;
@@ -21,7 +20,7 @@ public class TestDrawingIOS extends TestBase {
 
         @Before
         public void caps() throws MalformedURLException, InterruptedException {
-                driver = DriverFactory.getDriver("browserstackiOS");
+                driver = DriverFactory.getDriver("iPhone11ProMax");
 //                driver = DriverFactory.getDriver("ios");
                 screenDrawing = new ScreenDrawing(driver);
                 screenLoginIos = new ScreenLogin(driver);

@@ -6,19 +6,15 @@ import carlos.noronha.screen.ScreenInBox;
 import carlos.noronha.screen.ScreenLogin;
 import carlos.noronha.screen.ScreenMenuSettings;
 import io.appium.java_client.AppiumDriver;
-
-import org.junit.AfterClass;
 import org.junit.Before;
-import org.junit.BeforeClass;
 import org.junit.Test;
-import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.remote.RemoteWebElement;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.net.MalformedURLException;
 import java.util.concurrent.TimeUnit;
 
-public class TestMenuSettingsIOS extends TestBase {
+public class TestMenuSettingsIOSiPhone14ProMax extends TestBase {
         private static ScreenInBox screenInBox;
         private static AppiumDriver<RemoteWebElement> driver;
         private static ScreenMenuSettings screenMenuSettings;
@@ -27,7 +23,7 @@ public class TestMenuSettingsIOS extends TestBase {
 
         @Before
         public void caps() throws MalformedURLException, InterruptedException {
-                driver = DriverFactory.getDriver("browserstackiOS");
+                driver = DriverFactory.getDriver("iPhone14ProMax");
                 driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
                 screenMenuSettings = new ScreenMenuSettings(driver);
                 screenInBox = new ScreenInBox(driver);

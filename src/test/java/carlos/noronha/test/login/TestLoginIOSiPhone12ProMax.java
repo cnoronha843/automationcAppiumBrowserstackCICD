@@ -7,12 +7,13 @@ import carlos.noronha.screen.ScreenLogin;
 import carlos.noronha.screen.ScreenMenuSettings;
 import carlos.noronha.screen.ScreenSettings;
 import io.appium.java_client.AppiumDriver;
-import org.junit.*;
+import org.junit.Before;
+import org.junit.Test;
 import org.openqa.selenium.remote.RemoteWebElement;
 
 import java.net.MalformedURLException;
 
-public class TestLoginIOS extends TestBase {
+public class TestLoginIOSiPhone12ProMax extends TestBase {
         private static ScreenLogin screenLoginIos;
         private static ScreenMenuSettings screenMenuSettings;
         private static ScreenSettings screenSettings;
@@ -22,7 +23,7 @@ public class TestLoginIOS extends TestBase {
         @Before
         public  void caps() throws MalformedURLException {
 //                driver = DriverFactory.getDriver("ios");
-                driver = DriverFactory.getDriver("browserstackiOS");
+                driver = DriverFactory.getDriver("iPhone12ProMax");
                 screenLoginIos = new ScreenLogin(driver);
                 screenSettings = new ScreenSettings(driver);
                 screenInBox = new ScreenInBox(driver);
