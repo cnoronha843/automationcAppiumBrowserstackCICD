@@ -4,8 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e65e920b-f35f-4d18-b2df-3f1b29054abc" name="Changes" comment="Configure the pipeline to run on multiple devices iOS">
+    <list default="true" id="e65e920b-f35f-4d18-b2df-3f1b29054abc" name="Changes" comment="each 5 minutes">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/carlos/noronha/test/drawing/TestDrawingIOSiPhone11ProMax.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/carlos/noronha/test/drawing/TestDrawingIOSiPhone11ProMax.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/carlos/noronha/test/drawing/TestDrawingIOSiPhone12ProMax.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/carlos/noronha/test/drawing/TestDrawingIOSiPhone12ProMax.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/carlos/noronha/test/drawing/TestDrawingIOSiPhone13ProMax.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/carlos/noronha/test/drawing/TestDrawingIOSiPhone13ProMax.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/carlos/noronha/test/drawing/TestDrawingIOSiPhone14ProMax.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/carlos/noronha/test/drawing/TestDrawingIOSiPhone14ProMax.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/carlos/noronha/test/login/TestLoginIOSiPhone11ProMax.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/carlos/noronha/test/login/TestLoginIOSiPhone11ProMax.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/carlos/noronha/test/login/TestLoginIOSiPhone12ProMax.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/carlos/noronha/test/login/TestLoginIOSiPhone12ProMax.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/carlos/noronha/test/login/TestLoginIOSiPhone13ProMax.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/carlos/noronha/test/login/TestLoginIOSiPhone13ProMax.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/carlos/noronha/test/login/TestLoginIOSiPhone14ProMax.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/carlos/noronha/test/login/TestLoginIOSiPhone14ProMax.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -63,8 +71,8 @@
       <recent name="carlos.noronha.screen" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.TestSignupIOS.helpTeamNoteItTest">
-    <configuration name="TestDrawingIOS" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.TestDrawingIOSiPhone12ProMax">
+    <configuration name="TestDrawingIOSiPhone12ProMax" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="AutomationAppiumBrowserstack" />
       <extension name="coverage">
         <pattern>
@@ -73,7 +81,7 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="carlos.noronha.test.drawing" />
-      <option name="MAIN_CLASS_NAME" value="carlos.noronha.test.drawing.TestDrawingIOS" />
+      <option name="MAIN_CLASS_NAME" value="carlos.noronha.test.drawing.TestDrawingIOSiPhone12ProMax" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -143,11 +151,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.TestDrawingIOSiPhone12ProMax" />
         <item itemvalue="JUnit.TestSignupIOS.helpTeamNoteItTest" />
         <item itemvalue="JUnit.TestSignupIOS" />
         <item itemvalue="JUnit.TestMenuSettingsIOS" />
         <item itemvalue="JUnit.TestMenuSettingsIOS.followTheIg" />
-        <item itemvalue="JUnit.TestDrawingIOS" />
       </list>
     </recent_temporary>
   </component>
@@ -433,7 +441,21 @@
       <option name="project" value="LOCAL" />
       <updated>1673626559342</updated>
     </task>
-    <option name="localTasksCounter" value="40" />
+    <task id="LOCAL-00040" summary="Change ios version in DriverFactory.java">
+      <created>1673629765374</created>
+      <option name="number" value="00040" />
+      <option name="presentableId" value="LOCAL-00040" />
+      <option name="project" value="LOCAL" />
+      <updated>1673629765374</updated>
+    </task>
+    <task id="LOCAL-00041" summary="each 5 minutes">
+      <created>1673629823273</created>
+      <option name="number" value="00041" />
+      <option name="presentableId" value="LOCAL-00041" />
+      <option name="project" value="LOCAL" />
+      <updated>1673629823273</updated>
+    </task>
+    <option name="localTasksCounter" value="42" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -471,7 +493,9 @@
     <MESSAGE value="Change license" />
     <MESSAGE value="Change test execution trigger for 60 minutes" />
     <MESSAGE value="Configure the pipeline to run on multiple devices iOS" />
-    <option name="LAST_COMMIT_MESSAGE" value="Configure the pipeline to run on multiple devices iOS" />
+    <MESSAGE value="Change ios version in DriverFactory.java" />
+    <MESSAGE value="each 5 minutes" />
+    <option name="LAST_COMMIT_MESSAGE" value="each 5 minutes" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

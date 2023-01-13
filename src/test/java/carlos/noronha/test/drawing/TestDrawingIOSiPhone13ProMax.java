@@ -10,6 +10,7 @@ import org.junit.Test;
 import org.openqa.selenium.remote.RemoteWebElement;
 
 import java.net.MalformedURLException;
+import java.util.concurrent.TimeUnit;
 
 
 public class TestDrawingIOSiPhone13ProMax extends TestBase {
@@ -21,6 +22,8 @@ public class TestDrawingIOSiPhone13ProMax extends TestBase {
         @Before
         public void caps() throws MalformedURLException, InterruptedException {
                 driver = DriverFactory.getDriver("iPhone13ProMax");
+                driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+
 //                driver = DriverFactory.getDriver("ios");
                 screenDrawing = new ScreenDrawing(driver);
                 screenLoginIos = new ScreenLogin(driver);
