@@ -81,7 +81,7 @@ public class DriverFactory {
         DesiredCapabilities capabilities = new DesiredCapabilities();
         capabilities.setCapability("browserstack.user", "carlosandretrigu_iEGT0c");
         capabilities.setCapability("browserstack.key", "xEsCy3Tpan569YsFWWUK");
-        capabilities.setCapability("platformVersion", "14.0");
+        capabilities.setCapability("platformVersion", "16.0");
         capabilities.setCapability("deviceName", "iPhone 12 Pro Max");
         capabilities.setCapability("app", "bs://25cdd024363df6e761d84a5cbf0c1f3a9f71fafc");
 
@@ -91,8 +91,8 @@ public class DriverFactory {
         DesiredCapabilities capabilities = new DesiredCapabilities();
         capabilities.setCapability("browserstack.user", "carlosandretrigu_iEGT0c");
         capabilities.setCapability("browserstack.key", "xEsCy3Tpan569YsFWWUK");
-        capabilities.setCapability("platformVersion", "14.0");
-        capabilities.setCapability("deviceName", "iPhone 12 Pro Max");
+        capabilities.setCapability("platformVersion", "16.0");
+        capabilities.setCapability("deviceName", "iPhone 11 Pro Max");
         capabilities.setCapability("app", "bs://25cdd024363df6e761d84a5cbf0c1f3a9f71fafc");
 
 

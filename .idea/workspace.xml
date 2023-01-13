@@ -4,27 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e65e920b-f35f-4d18-b2df-3f1b29054abc" name="Changes" comment="Change test execution trigger for 60 minutes">
-      <change afterPath="$PROJECT_DIR$/src/test/java/carlos/noronha/test/drawing/TestDrawingIOSiPhone11ProMax.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/carlos/noronha/test/drawing/TestDrawingIOSiPhone12ProMax.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/carlos/noronha/test/drawing/TestDrawingIOSiPhone13ProMax.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/carlos/noronha/test/login/TestLoginIOSiPhone11ProMax.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/carlos/noronha/test/login/TestLoginIOSiPhone12ProMax.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/carlos/noronha/test/login/TestLoginIOSiPhone13ProMax.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/carlos/noronha/test/menuSettings/TestMenuSettingsIOSiPhone11ProMax.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/carlos/noronha/test/menuSettings/TestMenuSettingsIOSiPhone12ProMax.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/carlos/noronha/test/menuSettings/TestMenuSettingsIOSiPhone13ProMax.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/carlos/noronha/test/sinup/TestSignupIOSiPhone11ProMax.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/carlos/noronha/test/sinup/TestSignupIOSiPhone12ProMax.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/carlos/noronha/test/sinup/TestSignupIOSiPhone13ProMax.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.github/workflows/regressive.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/regressive.yml" afterDir="false" />
+    <list default="true" id="e65e920b-f35f-4d18-b2df-3f1b29054abc" name="Changes" comment="Configure the pipeline to run on multiple devices iOS">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/carlos/noronha/core/DriverFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/carlos/noronha/core/DriverFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/carlos/noronha/test/drawing/TestDrawingIOS.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/carlos/noronha/test/drawing/TestDrawingIOSiPhone14ProMax.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/carlos/noronha/test/login/TestLoginAndroid.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/carlos/noronha/test/login/TestLoginIOS.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/carlos/noronha/test/login/TestLoginIOSiPhone14ProMax.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/carlos/noronha/test/menuSettings/TestMenuSettingsIOS.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/carlos/noronha/test/menuSettings/TestMenuSettingsIOSiPhone14ProMax.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/carlos/noronha/test/sinup/TestSignupIOS.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/carlos/noronha/test/sinup/TestSignupIOSiPhone14ProMax.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -445,7 +426,14 @@
       <option name="project" value="LOCAL" />
       <updated>1673624088458</updated>
     </task>
-    <option name="localTasksCounter" value="39" />
+    <task id="LOCAL-00039" summary="Configure the pipeline to run on multiple devices iOS">
+      <created>1673626559342</created>
+      <option name="number" value="00039" />
+      <option name="presentableId" value="LOCAL-00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1673626559342</updated>
+    </task>
+    <option name="localTasksCounter" value="40" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -482,7 +470,8 @@
     <MESSAGE value="Change trigger time to once a day" />
     <MESSAGE value="Change license" />
     <MESSAGE value="Change test execution trigger for 60 minutes" />
-    <option name="LAST_COMMIT_MESSAGE" value="Change test execution trigger for 60 minutes" />
+    <MESSAGE value="Configure the pipeline to run on multiple devices iOS" />
+    <option name="LAST_COMMIT_MESSAGE" value="Configure the pipeline to run on multiple devices iOS" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
