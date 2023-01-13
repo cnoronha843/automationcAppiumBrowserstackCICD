@@ -4,10 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e65e920b-f35f-4d18-b2df-3f1b29054abc" name="Changes" comment="Chenge on Driver">
-      <change beforePath="$PROJECT_DIR$/.github/workflows/regressive.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/regressive.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="e65e920b-f35f-4d18-b2df-3f1b29054abc" name="Changes" comment="Chenge time" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -455,7 +452,14 @@
       <option name="project" value="LOCAL" />
       <updated>1673631050861</updated>
     </task>
-    <option name="localTasksCounter" value="43" />
+    <task id="LOCAL-00043" summary="Chenge time">
+      <created>1673631784883</created>
+      <option name="number" value="00043" />
+      <option name="presentableId" value="LOCAL-00043" />
+      <option name="project" value="LOCAL" />
+      <updated>1673631784883</updated>
+    </task>
+    <option name="localTasksCounter" value="44" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -470,7 +474,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Criacao do arquivo .yml" />
     <MESSAGE value="test cicd" />
     <MESSAGE value="mudando o comando para rodar o test na pipeline" />
     <MESSAGE value="colocando a senha certa no login" />
@@ -495,7 +498,8 @@
     <MESSAGE value="Change ios version in DriverFactory.java" />
     <MESSAGE value="each 5 minutes" />
     <MESSAGE value="Chenge on Driver" />
-    <option name="LAST_COMMIT_MESSAGE" value="Chenge on Driver" />
+    <MESSAGE value="Chenge time" />
+    <option name="LAST_COMMIT_MESSAGE" value="Chenge time" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

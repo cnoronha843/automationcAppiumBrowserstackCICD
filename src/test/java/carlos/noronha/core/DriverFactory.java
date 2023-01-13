@@ -49,51 +49,51 @@ public class DriverFactory {
 
     private static IOSDriver capsiOSrowserstack() throws MalformedURLException {
         DesiredCapabilities capabilities = new DesiredCapabilities();
-        capabilities.setCapability("browserstack.user", "carlosandretrigu_iEGT0c");
-        capabilities.setCapability("browserstack.key", "xEsCy3Tpan569YsFWWUK");
+        capabilities.setCapability("browserstack.user", "carlosiossendit_Zfp05n");
+        capabilities.setCapability("browserstack.key", "QeK6Q4zqYvsSypPzbBhk");
         capabilities.setCapability("platformVersion", "15.0");
         capabilities.setCapability("deviceName", "iPhone 13");
-        capabilities.setCapability("app", "bs://25cdd024363df6e761d84a5cbf0c1f3a9f71fafc");
+        capabilities.setCapability("app", "bs://4a397195ce7111d6b7089f8e90ff99c23c3f6e07");
 
 
         return (IOSDriver) (driver = new IOSDriver<RemoteWebElement>(new URL("http://hub.browserstack.com/wd/hub"), capabilities));
     }private static IOSDriver capsiOSrowserstackiPhone14ProMax() throws MalformedURLException {
         DesiredCapabilities capabilities = new DesiredCapabilities();
-        capabilities.setCapability("browserstack.user", "carlosandretrigu_iEGT0c");
-        capabilities.setCapability("browserstack.key", "xEsCy3Tpan569YsFWWUK");
+        capabilities.setCapability("browserstack.user", "carlosiossendit_Zfp05n");
+        capabilities.setCapability("browserstack.key", "QeK6Q4zqYvsSypPzbBhk");
         capabilities.setCapability("platformVersion", "16.0");
         capabilities.setCapability("deviceName", "iPhone 14 Pro Max");
-        capabilities.setCapability("app", "bs://25cdd024363df6e761d84a5cbf0c1f3a9f71fafc");
+        capabilities.setCapability("app", "bs://4a397195ce7111d6b7089f8e90ff99c23c3f6e07");
 
 
         return (IOSDriver) (driver = new IOSDriver<RemoteWebElement>(new URL("http://hub.browserstack.com/wd/hub"), capabilities));
     }private static IOSDriver capsiOSrowserstackiPhone13ProMax() throws MalformedURLException {
         DesiredCapabilities capabilities = new DesiredCapabilities();
-        capabilities.setCapability("browserstack.user", "carlosandretrigu_iEGT0c");
-        capabilities.setCapability("browserstack.key", "xEsCy3Tpan569YsFWWUK");
+        capabilities.setCapability("browserstack.user", "carlosiossendit_Zfp05n");
+        capabilities.setCapability("browserstack.key", "QeK6Q4zqYvsSypPzbBhk");
         capabilities.setCapability("platformVersion", "15.0");
         capabilities.setCapability("deviceName", "iPhone 13 Pro Max");
-        capabilities.setCapability("app", "bs://25cdd024363df6e761d84a5cbf0c1f3a9f71fafc");
+        capabilities.setCapability("app", "bs://4a397195ce7111d6b7089f8e90ff99c23c3f6e07");
 
 
         return (IOSDriver) (driver = new IOSDriver<RemoteWebElement>(new URL("http://hub.browserstack.com/wd/hub"), capabilities));
     }private static IOSDriver capsiOSrowserstackiPhone12ProMax() throws MalformedURLException {
         DesiredCapabilities capabilities = new DesiredCapabilities();
-        capabilities.setCapability("browserstack.user", "carlosandretrigu_iEGT0c");
-        capabilities.setCapability("browserstack.key", "xEsCy3Tpan569YsFWWUK");
+        capabilities.setCapability("browserstack.user", "carlosiossendit_Zfp05n");
+        capabilities.setCapability("browserstack.key", "QeK6Q4zqYvsSypPzbBhk");
         capabilities.setCapability("platformVersion", "16.0");
         capabilities.setCapability("deviceName", "iPhone 12 Pro Max");
-        capabilities.setCapability("app", "bs://25cdd024363df6e761d84a5cbf0c1f3a9f71fafc");
+        capabilities.setCapability("app", "bs://4a397195ce7111d6b7089f8e90ff99c23c3f6e07");
 
 
         return (IOSDriver) (driver = new IOSDriver<RemoteWebElement>(new URL("http://hub.browserstack.com/wd/hub"), capabilities));
     }private static IOSDriver capsiOSrowserstackiPhone11ProMax() throws MalformedURLException {
         DesiredCapabilities capabilities = new DesiredCapabilities();
-        capabilities.setCapability("browserstack.user", "carlosandretrigu_iEGT0c");
-        capabilities.setCapability("browserstack.key", "xEsCy3Tpan569YsFWWUK");
+        capabilities.setCapability("browserstack.user", "carlosiossendit_Zfp05n");
+        capabilities.setCapability("browserstack.key", "QeK6Q4zqYvsSypPzbBhk");
         capabilities.setCapability("platformVersion", "16.0");
         capabilities.setCapability("deviceName", "iPhone 11 Pro Max");
-        capabilities.setCapability("app", "bs://25cdd024363df6e761d84a5cbf0c1f3a9f71fafc");
+        capabilities.setCapability("app", "bs://4a397195ce7111d6b7089f8e90ff99c23c3f6e07");
 
 
         return (IOSDriver) (driver = new IOSDriver<RemoteWebElement>(new URL("http://hub.browserstack.com/wd/hub"), capabilities));
